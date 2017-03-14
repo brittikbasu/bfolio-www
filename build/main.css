@@ -27022,11 +27022,13 @@ page-home .card {
   height: 13.5vh;
   margin-top: 20px;
   box-shadow: 0px 0px 12px 1px #9B2F59;
+  background: #000;
 }
 
 page-home ion-card {
   position: relative;
   text-align: center;
+  background: #000;
 }
 
 page-home .card-title {
