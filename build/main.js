@@ -44864,7 +44864,7 @@ __decorate([
 ], ContactPage.prototype, "slides", void 0);
 ContactPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-contact',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/contact/contact.html"*/'\n    <ion-header class="header-container">\n  <ion-item class="me-container">\n    <ion-avatar item-left>\n      <img src="assets/img/brittik_basu.jpg" />\n    </ion-avatar>\n    <h2>Contact Me</h2>\n    <p>Thoughts on UX design and front end development</p>\n  </ion-item>\n</ion-header>\n<iframe id="typeform-full" width="100%" height="97%" frameborder="0" style="margin-top:3vh" src="https://brittikbasu.typeform.com/to/zxs04A"></iframe>\n\n\n\n<!--\n \n      -->\n<!--<ion-footer style="margin-bottom:2vh">\n    <button ion-button color="secondary" round (click)="slides.slidePrev()" >Linkedin<ion-icon name="linkedin"></ion-icon></button>\n  <button ion-button color="secondary" round (click)="slides.slidePrev()" >Github<ion-icon name="github"></ion-icon></button>\n</ion-footer>\n-->\n\n<!--\n<ion-content class="tabs-area">\n\n  <div class="top-container">\n    <h1>Feel free to get in touch :)</h1>\n    <p>Email : hello@brittikbasu.com <br><br>\n    </p>\n    <br>\n    <a href="https://www.linkedin.com/in/brittikbasu/">\n      <button ion-button icon-left>\n  <ion-icon name="logo-linkedin"></ion-icon>\n  Linkedin\n</button>\n    </a>\n    <br><br>\n    <a target="_blank" href="mailto:hello@brittikbasu.com">\n      <button ion-button icon-left>\n  <ion-icon name="mail"></ion-icon>\n  Email\n</button>\n    </a>\n\n\n  </div>\n-->'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/contact/contact.html"*/
+        selector: 'page-contact',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/contact/contact.html"*/'\n    <ion-header class="header-container">\n  <ion-item class="me-container">\n    <ion-avatar item-left>\n      <img src="assets/img/brittik_basu.jpg" />\n    </ion-avatar>\n    <h2>Contact Me</h2>\n    <p>Thoughts on UX design and front end development</p>\n  </ion-item>\n   <div class="header-buttons">\n  <button class="header-back-button " round ion-button large icon-left color="secondary" (click)=\'this.slide("prev")\' *ngIf="slideNo > 0">\n  <ion-icon name="arrow-back"></ion-icon>\n</button>\n   </div>\n</ion-header>\n<iframe id="typeform-full" width="100%" height="97%" frameborder="0" style="margin-top:3vh" src="https://brittikbasu.typeform.com/to/zxs04A"></iframe>\n\n\n\n<!--\n \n      -->\n<!--<ion-footer style="margin-bottom:2vh">\n    <button ion-button color="secondary" round (click)="slides.slidePrev()" >Linkedin<ion-icon name="linkedin"></ion-icon></button>\n  <button ion-button color="secondary" round (click)="slides.slidePrev()" >Github<ion-icon name="github"></ion-icon></button>\n</ion-footer>\n-->\n\n<!--\n<ion-content class="tabs-area">\n\n  <div class="top-container">\n    <h1>Feel free to get in touch :)</h1>\n    <p>Email : hello@brittikbasu.com <br><br>\n    </p>\n    <br>\n    <a href="https://www.linkedin.com/in/brittikbasu/">\n      <button ion-button icon-left>\n  <ion-icon name="logo-linkedin"></ion-icon>\n  Linkedin\n</button>\n    </a>\n    <br><br>\n    <a target="_blank" href="mailto:hello@brittikbasu.com">\n      <button ion-button icon-left>\n  <ion-icon name="mail"></ion-icon>\n  Email\n</button>\n    </a>\n\n\n  </div>\n-->'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/contact/contact.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
 ], ContactPage);
@@ -55801,7 +55801,7 @@ var GetintouchPage = (function () {
 GetintouchPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-getintouch',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/getintouch/getintouch.html"*/'<!--\n  Generated template for the GetintouchPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n <div class="contact-container">\n        <h1>Let\'s discuss your UX</h1>\n  <p margin-top>\n    As a UX designer, I work with you to design usable solutions that your users need.\n  </p>\n<div class="social-buttons">\n      <a target="_blank" href="https://m.me/brittikbasu"><button ion-button outline padding color="secondary-text" class="social-btn" round>\n  <ion-icon name="chatbubbles" style="font-size:1.5em"></ion-icon>\n</button></a>\n  <a target="_blank" href="https://www.linkedin.com/in/brittikbasu"><button ion-button outline padding color="secondary-text" class="social-btn" round>\n  <ion-icon name="logo-linkedin" style="font-size:1.5em"></ion-icon>\n</button></a>\n<div class="social-breaker"></div>\n<a target="_blank" href="mailto:hello@brittikbasu.com"><button ion-button outline padding color="secondary-text" class="social-btn" round>\n  <ion-icon name="mail" style="font-size:1.5em"></ion-icon>\n</button></a>\n<a target="_blank" href="https://github.com/brittikbasu"><button ion-button outline padding color="secondary-text" class="social-btn" round>\n  <ion-icon name="logo-github" style="font-size:1.5em"></ion-icon>\n</button></a>\n</div>\n          <button ion-button outline icon-right color="secondary-text" round (click)="switchTabs(2)" style="margin-top:2.5vh;">\n  Contact Form\n  <ion-icon name="paper-plane"></ion-icon>\n</button>\n      </div>'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/getintouch/getintouch.html"*/,
+        selector: 'page-getintouch',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/getintouch/getintouch.html"*/'<!--\n  Generated template for the GetintouchPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n <div class="slide-container">\n        <h1>Let\'s discuss your UX</h1>\n  <p margin-top>\n    As a UX designer, I work with you to design usable solutions that your users need.\n  </p>\n<div class="social-buttons">\n      <a target="_blank" href="https://m.me/brittikbasu"><button ion-button outline padding color="secondary-text" class="social-btn" round>\n  <ion-icon name="chatbubbles" style="font-size:1.5em"></ion-icon>\n</button></a>\n  <a target="_blank" href="https://www.linkedin.com/in/brittikbasu"><button ion-button outline padding color="secondary-text" class="social-btn" round>\n  <ion-icon name="logo-linkedin" style="font-size:1.5em"></ion-icon>\n</button></a>\n<div class="social-breaker"></div>\n<a target="_blank" href="mailto:hello@brittikbasu.com"><button ion-button outline padding color="secondary-text" class="social-btn" round>\n  <ion-icon name="mail" style="font-size:1.5em"></ion-icon>\n</button></a>\n<a target="_blank" href="https://github.com/brittikbasu"><button ion-button outline padding color="secondary-text" class="social-btn" round>\n  <ion-icon name="logo-github" style="font-size:1.5em"></ion-icon>\n</button></a>\n</div>\n          <button ion-button outline icon-right color="secondary-text" round (click)="switchTabs(2)" style="margin-top:2.5vh;">\n  Contact Form\n  <ion-icon name="paper-plane"></ion-icon>\n</button>\n      </div>'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/getintouch/getintouch.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], GetintouchPage);
@@ -56034,6 +56034,7 @@ var HomePage = (function () {
         this.slideNo = 0;
         this.about = true;
         this.secondaryBright = false;
+        this.nextSlideNo = 1;
         this.slidesData = [{
                 img: "assets/img/brittik_basu.jpg",
                 headline: "Brittik Basu",
@@ -56053,13 +56054,15 @@ var HomePage = (function () {
                 img: "assets/img/brittik_basu.jpg",
                 headline: "Get in Touch",
                 paragraph: "hello(at)brittikbasu.com"
-            }];
+            },
+            {
+                img: "",
+                headline: "",
+                paragraph: ""
+            }
+        ];
     }
-    HomePage.prototype.onScroll = function () {
-        //alert("scrolled");
-    };
     HomePage.prototype.ionViewDidLoad = function () {
-        // this.slides.lockSwipes(true);
         /*
         let alert = this.alertCtrl.create({
               title: 'Hi There Awesome Person!',
@@ -56072,59 +56075,68 @@ var HomePage = (function () {
     HomePage.prototype.goToSlide = function () {
         this.slides.slideTo(2, 500);
     };
-    HomePage.prototype.slideChanged = function () {
-        var _this = this;
-        if (this.slides.getActiveIndex() > 3) {
-            console.log("Treason");
+    HomePage.prototype.errorFree = function () {
+        if (this.slides.getActiveIndex() > this.slides.length() - 1) {
+            console.log("Slide Overflow Detected");
+            if (this.nextSlideNo > 4) {
+                this.nextSlideNo--;
+            }
         }
         else {
             this.slideNo = this.slides.getActiveIndex();
-            console.log("Current index is", this.slideNo);
-            if (this.slideNo == 0) {
-                this.secondaryBright = false;
-                this.about = true;
-                this.contact = false;
-                this.work = false;
-                console.log("on about slide");
-                this.slides.slideTo(0, 500);
+            if (this.nextSlideNo > this.slides.length() - 1) {
+                this.nextSlideNo--;
             }
-            else if (this.slideNo == 1) {
-                this.work = true;
-                this.about = false;
-                this.contact = false;
-                console.log("on work slide");
-                this.slides.slideTo(1, 500);
-                window.setTimeout(function () { return _this.secondaryBright = true; }, 750);
-            }
-            else if (this.slideNo == 2) {
-                this.contact = false;
-                this.work = false;
-                this.about = false;
-                console.log("on contact slide");
-                this.slides.slideTo(2, 500);
-                window.setTimeout(function () { return _this.secondaryBright = true; }, 350);
-            }
-            else if (this.slideNo == 3) {
-                this.contact = true;
-                this.work = false;
-                this.about = false;
-                console.log("on contact slide");
-                this.slides.slideTo(3, 500);
-                window.setTimeout(function () { return _this.secondaryBright = true; }, 350);
+            else {
+                this.nextSlideNo = this.slides.getActiveIndex() + 1;
             }
         }
     };
+    HomePage.prototype.slideChanged = function () {
+        var _this = this;
+        console.log("Current index is", this.slideNo);
+        this.errorFree();
+        console.log("nextSlideNo is", this.nextSlideNo);
+        if (this.slideNo == 0) {
+            this.secondaryBright = false;
+            this.about = true;
+            this.contact = false;
+            this.work = false;
+            console.log("on about slide");
+            //this.slides.slideTo(0, 500);
+        }
+        else if (this.slideNo == 1) {
+            this.work = true;
+            this.about = false;
+            this.contact = false;
+            console.log("on skills slide");
+            // this.slides.slideTo(1, 500);
+            window.setTimeout(function () { return _this.secondaryBright = true; }, 750);
+        }
+        else if (this.slideNo == 2) {
+            this.contact = false;
+            this.work = false;
+            this.about = false;
+            console.log("on work slide");
+            // this.slides.slideTo(2, 500);
+            window.setTimeout(function () { return _this.secondaryBright = true; }, 350);
+        }
+        else if (this.slideNo == 3) {
+            this.contact = true;
+            this.work = false;
+            this.about = false;
+            console.log("on contact slide");
+            //this.slides.slideTo(3, 500);
+            window.setTimeout(function () { return _this.secondaryBright = true; }, 350);
+        }
+    };
     HomePage.prototype.slide = function (where) {
-        console.log("unlocked swipe, next slide is here");
-        //this.slides.lockSwipes(false);
         if (where == "next") {
             this.slides.slideNext();
-            console.log("unlocked swipe, next slide is here");
         }
         else if (where == "prev") {
             this.slides.slidePrev();
         }
-        // this.slides.lockSwipes(true);
     };
     return HomePage;
 }());
@@ -56134,7 +56146,7 @@ __decorate([
 ], HomePage.prototype, "slides", void 0);
 HomePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/home/home.html"*/'<ion-header class="header-container">\n  <ion-item class="me-container">\n    <ion-avatar item-left (click)="this.slides.slideTo(0,500)">\n      <img src="{{slidesData[slideNo].img}}" />\n    </ion-avatar>\n    <h2 [class.secondary-bright]="secondaryBright">{{slidesData[slideNo].headline}}</h2>\n    <p>{{slidesData[slideNo].paragraph}}</p>\n  </ion-item>\n</ion-header>\n<ion-content class="tabs-area" fullscreen="true">\n\n\n  <ion-slides pager direction="horizontal" (ionSlideDidChange)="slideChanged()" paginationType="progress" effect="coverflow" speed="1000">\n\n    <ion-slide class="slide-about">\n      <page-about></page-about>\n   \n          <button class="next-slide-button show-only-on-laptop" round ion-button large icon-right color="secondary" (click)=\'this.slide("next")\' when="sm">\n  My Skills\n  <ion-icon name="arrow-forward"></ion-icon>\n</button>\n\n    </ion-slide>\n\n\n    <ion-slide class="slide-skills">\n      <!-- <ion-header no-border>\n        <ion-toolbar>\n          <button ion-button round (click)=\'this.slide("prev")\' outline color="primary-dark" class="slide-up" style="position:fixed; border-color: rgba(13, 58, 71, 0.22);">\n            <ion-icon name="arrow-up"></ion-icon></button>\n        </ion-toolbar>\n      </ion-header>\n      -->\n     <page-skills></page-skills>\n     <!-- <ion-footer no-border class="slide-footer">\n        <div class="blur-bg"></div>\n        <ion-toolbar>\n          <button ion-button icon-right color="secondary-text"  outline class="next-slide-button" round (click)=\'this.slide("next")\' when="sm">\n  My Work\n  <ion-icon name="arrow-down"></ion-icon>\n</button>\n        </ion-toolbar>\n      </ion-footer>\n-->\n<button class="prev-slide-button show-only-on-laptop" round ion-button large icon-left color="secondary" (click)=\'this.slide("next")\' when="sm">\n  <ion-icon name="arrow-back"></ion-icon>\n\n</button>\n      <button class="next-slide-button show-only-on-laptop" round ion-button large icon-right color="secondary" (click)=\'this.slide("next")\' when="sm">\n  My Work\n  <ion-icon name="arrow-forward"></ion-icon>\n</button>\n\n    </ion-slide>\n\n\n\n    <ion-slide class="slide-work">\n      <!-- <ion-header no-border>\n        <ion-toolbar>\n          <button ion-button round (click)=\'this.slide("prev")\' outline color="primary" class="slide-up" style="position:fixed; border-color:rgba(19, 79, 127, 0.55);">\n            <ion-icon name="arrow-up"></ion-icon></button>\n        </ion-toolbar>\n      </ion-header>\n      -->\n      <page-work></page-work>\n      \n     <!-- <ion-footer no-border class="slide-footer">\n                <div class="blur-bg"></div>\n        <ion-toolbar>\n          <button ion-button color="primary" icon-right outline class="next-slide-button" round (click)=\'this.slide("next")\' when="sm">\n  Get in touch\n  <ion-icon name="arrow-down"></ion-icon>\n</button>\n        </ion-toolbar>\n      </ion-footer>\n      -->\n    -<button class="prev-slide-button show-only-on-laptop" round ion-button large icon-left color="secondary" (click)=\'this.slide("next")\' when="sm">\n  <ion-icon name="arrow-back"></ion-icon>\n\n</button>\n            <button class="next-slide-button show-only-on-laptop"  ion-button round large icon-right color="secondary" (click)=\'this.slide("next")\' when="sm">\n  Get in Touch\n  <ion-icon name="arrow-forward"></ion-icon>\n</button>\n    </ion-slide>\n\n\n\n    <ion-slide class="slide-contact">\n     <!-- <ion-header no-border>\n        <ion-toolbar>\n          <button ion-button round (click)=\'this.slide("prev")\' outline color="primary" class="slide-up" style="position:fixed; border-color: rgba(13, 58, 71, 0.22);">\n            <ion-icon name="arrow-up"></ion-icon></button>\n        </ion-toolbar>\n      </ion-header>\n      -->  <button class="prev-slide-button show-only-on-laptop" round ion-button large icon-left color="secondary" (click)=\'this.slide("next")\' when="sm">\n  <ion-icon name="arrow-back"></ion-icon>\n\n</button>\n<page-getintouch></page-getintouch>\n    </ion-slide>\n <button class="prev-slide-button show-only-on-laptop" ion-button round  large icon-right color="primary" (click)=\'this.slide("prev")\' when="sm">\n  <ion-icon name="arrow-forward"></ion-icon>\n</button>\n\n  </ion-slides>\n\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/home/home.html"*/,
+        selector: 'page-home',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/home/home.html"*/'<ion-header class="header-container">\n  <ion-item class="me-container">\n    <ion-avatar item-left (click)="this.slides.slideTo(0,500)">\n      <img src="{{slidesData[slideNo].img}}" />\n    </ion-avatar>\n    <h2 [class.secondary-bright]="secondaryBright">{{slidesData[slideNo].headline}}</h2>\n    <p>{{slidesData[slideNo].paragraph}}</p>\n  </ion-item>\n<ion-item class="deutsch-toggle">\n  <ion-toggle checked="false"></ion-toggle>\n    <ion-label>Deutsch</ion-label>\n\n</ion-item>\n  <div class="header-buttons">\n  <button class="header-back-button " round ion-button large icon-left color="secondary" (click)=\'this.slide("prev")\' *ngIf="slideNo > 0">\n  <ion-icon name="arrow-back"></ion-icon>\n</button>\n      <button class="header-forward-button show-only-on-laptop" round ion-button large icon-right color="secondary" (click)=\'this.slide("next")\' *ngIf="this.slideNo != 3">\n  {{slidesData[nextSlideNo].headline}}\n  <ion-icon name="arrow-forward"></ion-icon>\n</button>\n  </div>\n\n</ion-header>\n<!--<ion-content class="tabs-area" fullscreen="true">-->\n\n\n\n  <ion-slides class="tabs-area" pager direction="horizontal" (ionSlideDidChange)="slideChanged()" paginationType="progress" effect="coverflow" speed="1150">\n\n    <ion-slide class="slide-about">\n      <page-about></page-about>\n   \n     \n\n    </ion-slide>\n\n\n    <ion-slide class="slide-skills">\n      <!-- <ion-header no-border>\n        <ion-toolbar>\n          <button ion-button round (click)=\'this.slide("prev")\' outline color="primary-dark" class="slide-up" style="position:fixed; border-color: rgba(13, 58, 71, 0.22);">\n            <ion-icon name="arrow-up"></ion-icon></button>\n        </ion-toolbar>\n      </ion-header>\n      -->\n     <page-skills></page-skills>\n     <!-- <ion-footer no-border class="slide-footer">\n        <div class="blur-bg"></div>\n        <ion-toolbar>\n          <button ion-button icon-right color="secondary-text"  outline class="next-slide-button" round (click)=\'this.slide("next")\' when="sm">\n  My Work\n  <ion-icon name="arrow-down"></ion-icon>\n</button>\n        </ion-toolbar>\n      </ion-footer>\n-->\n\n\n    </ion-slide>\n\n\n\n    <ion-slide class="slide-work">\n      <!-- <ion-header no-border>\n        <ion-toolbar>\n          <button ion-button round (click)=\'this.slide("prev")\' outline color="primary" class="slide-up" style="position:fixed; border-color:rgba(19, 79, 127, 0.55);">\n            <ion-icon name="arrow-up"></ion-icon></button>\n        </ion-toolbar>\n      </ion-header>\n      -->\n      <page-work></page-work>\n      \n     <!-- <ion-footer no-border class="slide-footer">\n                <div class="blur-bg"></div>\n        <ion-toolbar>\n          <button ion-button color="primary" icon-right outline class="next-slide-button" round (click)=\'this.slide("next")\' when="sm">\n  Get in touch\n  <ion-icon name="arrow-down"></ion-icon>\n</button>\n        </ion-toolbar>\n      </ion-footer>\n      -->\n   \n        \n    </ion-slide>\n\n\n\n    <ion-slide class="slide-contact">\n     <!-- <ion-header no-border>\n        <ion-toolbar>\n          <button ion-button round (click)=\'this.slide("prev")\' outline color="primary" class="slide-up" style="position:fixed; border-color: rgba(13, 58, 71, 0.22);">\n            <ion-icon name="arrow-up"></ion-icon></button>\n        </ion-toolbar>\n      </ion-header>\n      -->  \n<page-getintouch></page-getintouch>\n    </ion-slide>\n\n\n  </ion-slides>\n\n<!--</ion-content>-->\n'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/home/home.html"*/,
         queries: {
             content: new __WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */]('content')
         }
@@ -56289,7 +56301,7 @@ var WorkPage = (function () {
 }());
 WorkPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-work',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/work/work.html"*/'<!--\n  Generated template for the Work page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<!--\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>work</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n-->\n<div class="slide-container">\n  <!--<h1>My Work</h1>-->\n\n  <ion-card [navPush]="bravecamPage">\n\n    <div class="card-info-container">\n      <div class="card-title">Brave Cam\n        <ion-icon name="arrow-forward" color="secondary-light" class="card-arrow"></ion-icon>\n      </div>\n      <div class="card-subtitle">Android app to fight racism</div>\n    </div>\n\n    <img class="card-image" src="assets/img/card-madison.png" />\n\n    <div class="card-button">\n    <button ion-button full color="secondary-light" class="cover">Know More</button>\n    </div>\n\n  </ion-card>\n\n  <ion-card [navPush]="chaldiyePage">\n\n    <div class="card-info-container">\n      <div class="card-title">\n        <div class="view-history">\n          <div>\n            Chaldiye\n            <ion-icon name="arrow-forward" color="secondary-light" class="card-arrow"></ion-icon>\n          </div>\n        </div>\n      </div>\n      <div class="card-subtitle">App for an Adventure Startup</div>\n    </div>\n\n    <img class="card-image" src="assets/img/card-huntfactor.jpg" />\n\n    <div class="card-button">\n    <button ion-button full color="secondary-light" class="cover">Know More</button>\n    </div>\n\n  </ion-card>\n\n  <ion-card [navPush]="polysparesPage">\n\n    <div class="card-info-container">\n      <div class="card-title">Polyspares\n        <ion-icon name="arrow-forward" color="secondary-light" class="card-arrow"></ion-icon>\n      </div>\n      <div class="card-subtitle">Website for spares exporter</div>\n    </div>\n\n    <img class="card-image" src="assets/img/card-polyspares.jpg" />\n\n<div class="card-button">\n    <button ion-button full color="secondary-light" class="cover">Know More</button>\n</div>\n\n  </ion-card>\n\n  <ion-card [navPush]="polysparesPage">\n    <div class="card-info-container">\n      <div class="card-title">Polizeigewalt\n        <ion-icon name="arrow-forward" color="secondary-light" class="card-arrow"></ion-icon>\n      </div>\n      <div class="card-subtitle">Logo design for a non-profit</div>\n    </div>\n    <img class="card-image" src="assets/img/card-polyspares.jpg" />\n\n    <div class="card-button">\n      <button ion-button full color="secondary-light" class="cover" >Know More</button>\n      </div>\n  </ion-card>\n\n  <!-- <ion-card [navPush]="polizeigewaltPage">-->\n  <!--      <img src="assets/img/card-sf.png" /> -->\n  <!--<div class="card-title">Polizeigewalt\n          <ion-icon name="arrow-forward" color="secondary-light" style="float: right; margin-right: 1.3em;"></ion-icon>\n        </div>\n        <div class="card-subtitle">Logo design for a non profit</div>\n      </ion-card>\n-->\n</div>\n'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/work/work.html"*/
+        selector: 'page-work',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/work/work.html"*/'<div class="slide-container">\n  <ion-card [navPush]="bravecamPage">\n\n    <div class="card-info-container">\n      <div class="card-title">Brave Cam\n        <ion-icon name="arrow-forward" color="secondary-light" class="card-arrow"></ion-icon>\n      </div>\n      <div class="card-subtitle">Android app to fight racism</div>\n    </div>\n\n    <img class="card-image" src="assets/img/card-madison.png" />\n\n    <div class="card-button">\n    <button ion-button full color="secondary-light" class="cover">Know More</button>\n    </div>\n\n  </ion-card>\n\n  <ion-card [navPush]="chaldiyePage">\n\n    <div class="card-info-container">\n      <div class="card-title">\n        <div class="view-history">\n          <div>\n            Chaldiye\n            <ion-icon name="arrow-forward" color="secondary-light" class="card-arrow"></ion-icon>\n          </div>\n        </div>\n      </div>\n      <div class="card-subtitle">App for an Adventure Startup</div>\n    </div>\n\n    <img class="card-image" src="assets/img/card-huntfactor.jpg" />\n\n    <div class="card-button">\n    <button ion-button full color="secondary-light" class="cover">Know More</button>\n    </div>\n\n  </ion-card>\n\n  <ion-card [navPush]="polysparesPage">\n\n    <div class="card-info-container">\n      <div class="card-title">Polyspares\n        <ion-icon name="arrow-forward" color="secondary-light" class="card-arrow"></ion-icon>\n      </div>\n      <div class="card-subtitle">Website for spares exporter</div>\n    </div>\n\n    <img class="card-image" src="assets/img/card-polyspares.jpg" />\n\n<div class="card-button">\n    <button ion-button full color="secondary-light" class="cover">Know More</button>\n</div>\n\n  </ion-card>\n\n   <ion-card [navPush]="polizeigewaltPage">\n    <div class="card-info-container">\n      <div class="card-title">Polizeigewalt\n        <ion-icon name="arrow-forward" color="secondary-light" class="card-arrow"></ion-icon>\n      </div>\n      <div class="card-subtitle">Logo design for a non-profit</div>\n    </div>\n    <img class="card-image" src="assets/img/card-polyspares.jpg" />\n\n    <div class="card-button">\n      <button ion-button full color="secondary-light" class="cover" >Know More</button>\n      </div>\n  </ion-card>\n<br><br><br>\n</div>\n'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/work/work.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], WorkPage);
@@ -74545,7 +74557,7 @@ var SkillsPage = (function () {
 SkillsPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-skills',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/skills/skills.html"*/'<!--\n  Generated template for the SkillsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<!--\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>skills</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n-->\n<ion-content class="slide-container">\n\n  <h1>UX Design</h1>\n  <p>\n    As a UX designer, I work with you to design usable solutions that your users need. I develop concepts, personas, storyboards,\n    wireframes and prototypes to clearly communicate these solutions.\n  </p>\n \n  <h1>Front-end Development</h1>\n  <!--<p>\n      My skills in UX Design translate well into understanding how you wish to be perceived as a brand and enables me to craft\n      your distinctive personality across touchpoints.</p>\n-->\n  <p>\n    I love bringing my designs to life! Front-end development allows me to do so. I use Angular and Ionic framework to give my\n    web apps a native feel. Progressive web apps are the future!\n  </p>\n\n   \n  <h1>Brand & Identity Design</h1>\n  <p>\n      My skills in UX Design translate well into understanding how you wish to be perceived as a brand and enables me to craft\n      your distinctive personality across touchpoints.</p>\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/skills/skills.html"*/,
+        selector: 'page-skills',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/skills/skills.html"*/'<!--\n  Generated template for the SkillsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<!--\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>skills</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n-->\n<ion-content class="slide-container">\n\n  <h1>UX Design</h1>\n  <p>\n    As a UX designer, I work with you to design usable solutions that your users need. I develop concepts, personas, storyboards,\n    wireframes and prototypes to clearly communicate these solutions.\n  </p>\n \n  <h1>Front-end Development</h1>\n  <!--<p>\n      My skills in UX Design translate well into understanding how you wish to be perceived as a brand and enables me to craft\n      your distinctive personality across touchpoints.</p>\n-->\n  <p>\n    I love bringing my designs to life! Front-end development allows me to do so. I use Angular and Ionic framework to give my\n    web apps a native feel. Progressive web apps are the future!\n  </p>\n\n   \n  <h1>Brand & Identity Design</h1>\n  <p>\n      My skills in UX Design translate well into understanding how you wish to be perceived as a brand and enables me to craft\n      your distinctive personality across touchpoints.</p>\n      <br>\n       \n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/skills/skills.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], SkillsPage);
