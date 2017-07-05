@@ -68070,13 +68070,6 @@ page-home .secondary-bright {
   }
 }
 
-page-home .swiper-container-vertical > .swiper-pagination-bullets {
-  right: 3vw;
-  top: 50%;
-  -webkit-transform: translate3d(0px, -50%, 0);
-  transform: translate3d(0px, -50%, 0);
-}
-
 page-home .toolbar-background {
   background: transparent;
 }
@@ -68202,7 +68195,7 @@ page-home .swiper-pagination-progress .swiper-pagination-progressbar {
 }
 
 page-home .swiper-container-horizontal > .swiper-pagination-progress {
-  top: 20.2vh;
+  top: 18.83375vh;
   height: 4px;
 }
 
