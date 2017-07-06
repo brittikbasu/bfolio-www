@@ -67426,18 +67426,6 @@ ion-navbar.toolbar {
   }
 }
 
-/*
-  @if ($dev-width=="xs") {
-    @media (max-width: $xs) {
-      @content;
-    }
-  }
-  @if ($dev-width=="lg") {
-    @media (max-width: $xl) {
-      @content;
-    }
-  }
-  */
 /* exo-2-300italic - latin */
 @font-face {
   font-family: 'Exo 2';
@@ -67446,18 +67434,6 @@ ion-navbar.toolbar {
   src: local("Exo 2 Light Italic"), local("Exo2-LightItalic"), url("../assets/fonts/Exo_2/Exo2-LightItalic.ttf") format("truetype");
 }
 
-/*
-  @if ($dev-width=="xs") {
-    @media (max-width: $xs) {
-      @content;
-    }
-  }
-  @if ($dev-width=="lg") {
-    @media (max-width: $xl) {
-      @content;
-    }
-  }
-  */
 .content {
   background-color: #000;
 }
@@ -67781,6 +67757,17 @@ p {
   background-color: red;
 }
 
+.tabs-area .spacer {
+  height: 5vh;
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  .tabs-area .spacer {
+    height: 0;
+  }
+}
+
 page-about {
   /*.header-container {
     height: 20.2%;
@@ -67798,11 +67785,9 @@ page-about {
 
 page-about .slide-container {
   height: 80vh;
-  margin-top: 11vh;
   background-color: transparent;
   text-align: center;
   overflow: scroll;
-  margin-top: 23.6375vh;
 }
 
 @media (min-width: 960px) {
@@ -67863,11 +67848,9 @@ page-blog {
 
 page-blog .slide-container {
   height: 80vh;
-  margin-top: 11vh;
   background-color: transparent;
   text-align: center;
   overflow: scroll;
-  margin-top: 23.6375vh;
 }
 
 @media (min-width: 960px) {
@@ -67982,11 +67965,9 @@ page-contact iframe {
 
 page-getintouch .slide-container {
   height: 80vh;
-  margin-top: 11vh;
   background-color: transparent;
   text-align: center;
   overflow: hidden;
-  margin-top: 23.6375vh;
 }
 
 @media (min-width: 960px) {
@@ -68008,7 +67989,7 @@ page-getintouch .slide-container {
 @media (max-width: 700px) {
   page-getintouch .slide-container {
     height: 60vh;
-    margin-top: 11vh;
+    margin-top: 0;
   }
 }
 
@@ -68080,6 +68061,13 @@ page-home .toolbar-background {
   }
 }
 
+@media (min-width: 960px) {
+  page-home ion-slides {
+    height: 84.6vh;
+    margin-top: -4.1%;
+  }
+}
+
 page-home .slide-footer {
   margin-bottom: 12.2vh;
 }
@@ -68107,12 +68095,6 @@ page-home .slide-skills p {
 }
 
 @media (max-width: 700px) {
-  page-home .slide-skills {
-    /*border-color: #00303d;
-    color: #30d6fa;
-    background-color: rgba(178, 0, 70, 0.75);
-    */
-  }
   page-home .slide-skills .next-slide-button {
     border-color: #00303d;
     color: #30d6fa;
@@ -68134,12 +68116,6 @@ page-home .slide-work {
 }
 
 @media (max-width: 700px) {
-  page-home .slide-work {
-    /*border-color: #00303d;
-    color: #30d6fa;
-    background-color: rgba(178, 0, 70, 0.75);
-    */
-  }
   page-home .slide-work .next-slide-button {
     border-color: #00303d;
     color: #30d6fa;
@@ -68196,12 +68172,12 @@ page-home .swiper-pagination-progress .swiper-pagination-progressbar {
 
 page-home .swiper-container-horizontal > .swiper-pagination-progress {
   top: 18.83375vh;
-  height: 4px;
+  top: -0.01vh;
 }
 
 @media (min-width: 960px) {
   page-home .swiper-container-horizontal > .swiper-pagination-progress {
-    top: 15.2vh;
+    top: 0;
   }
 }
 
@@ -68302,11 +68278,9 @@ page-home .deutsch-toggle {
 
 page-skills .slide-container {
   height: 80vh;
-  margin-top: 11vh;
   background-color: transparent;
   text-align: center;
   overflow: scroll;
-  margin-top: 23.6375vh;
 }
 
 @media (min-width: 960px) {
@@ -68327,7 +68301,6 @@ page-skills .slide-container {
 
 @media (min-width: 960px) {
   page-skills .slide-container {
-    margin-top: 10vh;
     height: 525px;
   }
 }
@@ -68341,12 +68314,6 @@ page-skills h2 {
 page-skills h3 {
   color: #134F7F;
   font-family: "Exo 2", sans-serif;
-}
-
-page-skills hr.me {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, transparent, rgba(224, 224, 224, 0.75), rgba(124, 23, 3, 0));
 }
 
 page-work {
@@ -68363,11 +68330,9 @@ page-work {
 
 page-work .slide-container {
   height: 80vh;
-  margin-top: 11vh;
   background-color: transparent;
   text-align: center;
   overflow: scroll;
-  margin-top: 23.6375vh;
   /* @media(min-width: 600px) {
       padding-top: inherit;
       margin-top: -$header-height*0.7;
