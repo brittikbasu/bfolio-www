@@ -18585,6 +18585,459 @@ function copyInputAttributes(srcElement, destElement) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_app_app_root__ = __webpack_require__(53);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__components_app_app_root__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_app_menu_controller__ = __webpack_require__(24);
+/* unused harmony reexport MenuController */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_action_sheet_action_sheet__ = __webpack_require__(50);
+/* unused harmony reexport ActionSheet */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_action_sheet_action_sheet_controller__ = __webpack_require__(107);
+/* unused harmony reexport ActionSheetController */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_action_sheet_action_sheet_component__ = __webpack_require__(49);
+/* unused harmony reexport ActionSheetCmp */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_alert_alert__ = __webpack_require__(52);
+/* unused harmony reexport Alert */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_alert_alert_controller__ = __webpack_require__(108);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_6__components_alert_alert_controller__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_alert_alert_component__ = __webpack_require__(51);
+/* unused harmony reexport AlertCmp */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_app_app__ = __webpack_require__(6);
+/* unused harmony reexport App */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_avatar_avatar__ = __webpack_require__(110);
+/* unused harmony reexport Avatar */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_backdrop_backdrop__ = __webpack_require__(54);
+/* unused harmony reexport Backdrop */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_badge_badge__ = __webpack_require__(111);
+/* unused harmony reexport Badge */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_button_button__ = __webpack_require__(33);
+/* unused harmony reexport Button */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_card_card__ = __webpack_require__(115);
+/* unused harmony reexport Card */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_card_card_content__ = __webpack_require__(112);
+/* unused harmony reexport CardContent */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_card_card_header__ = __webpack_require__(113);
+/* unused harmony reexport CardHeader */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_card_card_title__ = __webpack_require__(114);
+/* unused harmony reexport CardTitle */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_checkbox_checkbox__ = __webpack_require__(116);
+/* unused harmony reexport Checkbox */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_chip_chip__ = __webpack_require__(117);
+/* unused harmony reexport Chip */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_content_content__ = __webpack_require__(18);
+/* unused harmony reexport Content */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_datetime_datetime__ = __webpack_require__(118);
+/* unused harmony reexport DateTime */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_fab_fab__ = __webpack_require__(38);
+/* unused harmony reexport FabButton */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_fab_fab_container__ = __webpack_require__(119);
+/* unused harmony reexport FabContainer */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_fab_fab_list__ = __webpack_require__(55);
+/* unused harmony reexport FabList */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_grid_col__ = __webpack_require__(120);
+/* unused harmony reexport Col */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_grid_grid__ = __webpack_require__(121);
+/* unused harmony reexport Grid */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_grid_row__ = __webpack_require__(122);
+/* unused harmony reexport Row */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_ion__ = __webpack_require__(4);
+/* unused harmony reexport Ion */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_icon_icon__ = __webpack_require__(56);
+/* unused harmony reexport Icon */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_img_img__ = __webpack_require__(123);
+/* unused harmony reexport Img */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__components_infinite_scroll_infinite_scroll__ = __webpack_require__(57);
+/* unused harmony reexport InfiniteScroll */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__components_infinite_scroll_infinite_scroll_content__ = __webpack_require__(124);
+/* unused harmony reexport InfiniteScrollContent */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__components_input_input__ = __webpack_require__(125);
+/* unused harmony reexport TextInput */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__components_item_item__ = __webpack_require__(16);
+/* unused harmony reexport Item */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__components_item_item_content__ = __webpack_require__(126);
+/* unused harmony reexport ItemContent */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_item_item_divider__ = __webpack_require__(127);
+/* unused harmony reexport ItemDivider */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__components_item_item_group__ = __webpack_require__(128);
+/* unused harmony reexport ItemGroup */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__components_item_item_options__ = __webpack_require__(60);
+/* unused harmony reexport ItemOptions */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__components_item_item_reorder__ = __webpack_require__(61);
+/* unused harmony reexport ItemReorder */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__components_item_item_sliding__ = __webpack_require__(130);
+/* unused harmony reexport ItemSliding */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__components_item_reorder__ = __webpack_require__(131);
+/* unused harmony reexport Reorder */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__components_label_label__ = __webpack_require__(62);
+/* unused harmony reexport Label */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__components_list_list__ = __webpack_require__(64);
+/* unused harmony reexport List */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__components_list_list_header__ = __webpack_require__(63);
+/* unused harmony reexport ListHeader */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__components_loading_loading__ = __webpack_require__(133);
+/* unused harmony reexport Loading */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_loading_loading_controller__ = __webpack_require__(132);
+/* unused harmony reexport LoadingController */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_loading_loading_component__ = __webpack_require__(65);
+/* unused harmony reexport LoadingCmp */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__components_menu_menu__ = __webpack_require__(136);
+/* unused harmony reexport Menu */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__components_menu_menu_close__ = __webpack_require__(134);
+/* unused harmony reexport MenuClose */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__components_menu_menu_toggle__ = __webpack_require__(135);
+/* unused harmony reexport MenuToggle */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__components_menu_menu_types__ = __webpack_require__(209);
+/* unused harmony reexport MenuType */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__components_modal_modal__ = __webpack_require__(138);
+/* unused harmony reexport Modal */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__components_modal_modal_component__ = __webpack_require__(66);
+/* unused harmony reexport ModalCmp */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__components_modal_modal_controller__ = __webpack_require__(137);
+/* unused harmony reexport ModalController */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__components_nav_nav__ = __webpack_require__(69);
+/* unused harmony reexport Nav */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__components_nav_nav_pop__ = __webpack_require__(67);
+/* unused harmony reexport NavPop */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__components_nav_nav_pop_anchor__ = __webpack_require__(139);
+/* unused harmony reexport NavPopAnchor */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__components_nav_nav_push__ = __webpack_require__(68);
+/* unused harmony reexport NavPush */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__components_nav_nav_push_anchor__ = __webpack_require__(140);
+/* unused harmony reexport NavPushAnchor */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__components_input_native_input__ = __webpack_require__(58);
+/* unused harmony reexport NativeInput */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__components_input_next_input__ = __webpack_require__(59);
+/* unused harmony reexport NextInput */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__components_note_note__ = __webpack_require__(141);
+/* unused harmony reexport Note */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__components_option_option__ = __webpack_require__(70);
+/* unused harmony reexport Option */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__components_picker_picker__ = __webpack_require__(142);
+/* unused harmony reexport Picker */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__components_picker_picker_component__ = __webpack_require__(72);
+/* unused harmony reexport PickerCmp */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__components_picker_picker_column__ = __webpack_require__(71);
+/* unused harmony reexport PickerColumnCmp */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__components_picker_picker_controller__ = __webpack_require__(73);
+/* unused harmony reexport PickerController */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_67__components_popover_popover__ = __webpack_require__(75);
+/* unused harmony reexport Popover */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__components_popover_popover_component__ = __webpack_require__(74);
+/* unused harmony reexport PopoverCmp */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__components_popover_popover_controller__ = __webpack_require__(143);
+/* unused harmony reexport PopoverController */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__components_radio_radio_button__ = __webpack_require__(144);
+/* unused harmony reexport RadioButton */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__components_radio_radio_group__ = __webpack_require__(76);
+/* unused harmony reexport RadioGroup */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_72__components_range_range__ = __webpack_require__(146);
+/* unused harmony reexport Range */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_73__components_range_range_knob__ = __webpack_require__(145);
+/* unused harmony reexport RangeKnob */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_74__components_refresher_refresher__ = __webpack_require__(77);
+/* unused harmony reexport Refresher */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_75__components_refresher_refresher_content__ = __webpack_require__(147);
+/* unused harmony reexport RefresherContent */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_76__components_scroll_scroll__ = __webpack_require__(148);
+/* unused harmony reexport Scroll */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_77__components_searchbar_searchbar__ = __webpack_require__(149);
+/* unused harmony reexport Searchbar */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_78__components_segment_segment__ = __webpack_require__(150);
+/* unused harmony reexport Segment */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_79__components_segment_segment_button__ = __webpack_require__(78);
+/* unused harmony reexport SegmentButton */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_80__components_select_select__ = __webpack_require__(151);
+/* unused harmony reexport Select */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_81__components_select_select_popover_component__ = __webpack_require__(79);
+/* unused harmony reexport SelectPopover */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_82__components_show_hide_when_show_when__ = __webpack_require__(153);
+/* unused harmony reexport ShowWhen */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_83__components_show_hide_when_display_when__ = __webpack_require__(80);
+/* unused harmony reexport DisplayWhen */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_84__components_show_hide_when_hide_when__ = __webpack_require__(152);
+/* unused harmony reexport HideWhen */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_85__components_slides_slide__ = __webpack_require__(154);
+/* unused harmony reexport Slide */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_86__components_slides_slides__ = __webpack_require__(81);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_86__components_slides_slides__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_87__components_spinner_spinner__ = __webpack_require__(157);
+/* unused harmony reexport Spinner */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_88__components_split_pane_split_pane__ = __webpack_require__(34);
+/* unused harmony reexport SplitPane */
+/* unused harmony reexport RootNode */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_89__components_tabs_tab__ = __webpack_require__(159);
+/* unused harmony reexport Tab */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_90__components_tabs_tab_button__ = __webpack_require__(158);
+/* unused harmony reexport TabButton */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_91__components_tabs_tab_highlight__ = __webpack_require__(86);
+/* unused harmony reexport TabHighlight */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_92__components_tabs_tabs__ = __webpack_require__(87);
+/* unused harmony reexport Tabs */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_93__components_toast_toast__ = __webpack_require__(162);
+/* unused harmony reexport Toast */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_94__components_toast_toast_component__ = __webpack_require__(88);
+/* unused harmony reexport ToastCmp */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_95__components_toast_toast_controller__ = __webpack_require__(161);
+/* unused harmony reexport ToastController */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_96__components_toggle_toggle__ = __webpack_require__(163);
+/* unused harmony reexport Toggle */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_97__components_toolbar_toolbar_footer__ = __webpack_require__(165);
+/* unused harmony reexport Footer */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_98__components_toolbar_toolbar_header__ = __webpack_require__(166);
+/* unused harmony reexport Header */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_99__components_toolbar_toolbar__ = __webpack_require__(42);
+/* unused harmony reexport Toolbar */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_100__components_toolbar_toolbar_item__ = __webpack_require__(167);
+/* unused harmony reexport ToolbarItem */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_101__components_toolbar_toolbar_title__ = __webpack_require__(168);
+/* unused harmony reexport ToolbarTitle */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_102__components_toolbar_navbar__ = __webpack_require__(35);
+/* unused harmony reexport Navbar */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_103__components_thumbnail_thumbnail__ = __webpack_require__(160);
+/* unused harmony reexport Thumbnail */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_104__components_typography_typography__ = __webpack_require__(169);
+/* unused harmony reexport Typography */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_105__components_virtual_scroll_virtual_footer__ = __webpack_require__(89);
+/* unused harmony reexport VirtualFooter */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_106__components_virtual_scroll_virtual_header__ = __webpack_require__(90);
+/* unused harmony reexport VirtualHeader */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_107__components_virtual_scroll_virtual_item__ = __webpack_require__(91);
+/* unused harmony reexport VirtualItem */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_108__components_virtual_scroll_virtual_scroll__ = __webpack_require__(170);
+/* unused harmony reexport VirtualScroll */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_109__config_config__ = __webpack_require__(1);
+/* unused harmony reexport Config */
+/* unused harmony reexport setupConfig */
+/* unused harmony reexport ConfigToken */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_110__platform_dom_controller__ = __webpack_require__(8);
+/* unused harmony reexport DomController */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_111__platform_platform__ = __webpack_require__(3);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_111__platform_platform__["a"]; });
+/* unused harmony reexport setupPlatform */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_112__tap_click_haptic__ = __webpack_require__(36);
+/* unused harmony reexport Haptic */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_113__navigation_deep_linker__ = __webpack_require__(14);
+/* unused harmony reexport DeepLinker */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_114__navigation_ionic_page__ = __webpack_require__(227);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_114__navigation_ionic_page__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_115__navigation_nav_controller__ = __webpack_require__(19);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_115__navigation_nav_controller__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_116__navigation_nav_controller_base__ = __webpack_require__(44);
+/* unused harmony reexport NavControllerBase */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_117__navigation_nav_params__ = __webpack_require__(15);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_117__navigation_nav_params__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_118__navigation_nav_util__ = __webpack_require__(22);
+/* unused harmony reexport DeepLinkMetadata */
+/* unused harmony reexport DeepLinkMetadataFactory */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_119__tap_click_tap_click__ = __webpack_require__(181);
+/* unused harmony reexport TapClick */
+/* unused harmony reexport setupTapClick */
+/* unused harmony reexport isActivatable */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_120__navigation_url_serializer__ = __webpack_require__(176);
+/* unused harmony reexport UrlSerializer */
+/* unused harmony reexport DeepLinkConfigToken */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_121__navigation_view_controller__ = __webpack_require__(5);
+/* unused harmony reexport ViewController */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_122__gestures_pan_gesture__ = __webpack_require__(43);
+/* unused harmony reexport PanGesture */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_123__gestures_gesture__ = __webpack_require__(223);
+/* unused harmony reexport Gesture */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_124__gestures_slide_edge_gesture__ = __webpack_require__(92);
+/* unused harmony reexport SlideEdgeGesture */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_125__gestures_slide_gesture__ = __webpack_require__(174);
+/* unused harmony reexport SlideGesture */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_126__gestures_gesture_controller__ = __webpack_require__(7);
+/* unused harmony reexport BLOCK_ALL */
+/* unused harmony reexport GESTURE_GO_BACK_SWIPE */
+/* unused harmony reexport GESTURE_MENU_SWIPE */
+/* unused harmony reexport GESTURE_ITEM_SWIPE */
+/* unused harmony reexport GESTURE_REFRESHER */
+/* unused harmony reexport GESTURE_TOGGLE */
+/* unused harmony reexport GestureController */
+/* unused harmony reexport GestureDelegate */
+/* unused harmony reexport BlockerDelegate */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_127__util_events__ = __webpack_require__(183);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_127__util_events__["b"]; });
+/* unused harmony reexport setupEvents */
+/* unused harmony reexport setupProvideEvents */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_128__util_ionic_error_handler__ = __webpack_require__(235);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_128__util_ionic_error_handler__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_129__platform_keyboard__ = __webpack_require__(25);
+/* unused harmony reexport Keyboard */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_130__util_form__ = __webpack_require__(17);
+/* unused harmony reexport Form */
+/* unused harmony reexport IonicFormInput */
+/* unused harmony reexport IonicTapInput */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_131__util_util__ = __webpack_require__(2);
+/* unused harmony reexport reorderArray */
+/* unused harmony reexport normalizeURL */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_132__animations_animation__ = __webpack_require__(11);
+/* unused harmony reexport Animation */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_133__transitions_page_transition__ = __webpack_require__(29);
+/* unused harmony reexport PageTransition */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_134__transitions_transition__ = __webpack_require__(26);
+/* unused harmony reexport Transition */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_135__platform_platform_registry__ = __webpack_require__(177);
+/* unused harmony reexport PlatformConfigToken */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_136__config_mode_registry__ = __webpack_require__(171);
+/* unused harmony reexport registerModeConfigs */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_137__gestures_gesture_config__ = __webpack_require__(172);
+/* unused harmony reexport IonicGestureConfig */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_138__module__ = __webpack_require__(226);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_138__module__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_138__module__["b"]; });
+/* unused harmony reexport provideLocationStrategy */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Global Providers
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Export Utils
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+/* 11 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__util_util__ = __webpack_require__(2);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Animation; });
 
@@ -19855,459 +20308,6 @@ var /** @type {?} */ ANIMATION_CSS_VALUE_REGEX = /(^-?\d*\.?\d*)(.*)/;
 var /** @type {?} */ ANIMATION_DURATION_MIN = 32;
 var /** @type {?} */ ANIMATION_TRANSITION_END_FALLBACK_PADDING_MS = 400;
 //# sourceMappingURL=animation.js.map
-
-/***/ }),
-/* 11 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_app_app_root__ = __webpack_require__(53);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__components_app_app_root__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_app_menu_controller__ = __webpack_require__(24);
-/* unused harmony reexport MenuController */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_action_sheet_action_sheet__ = __webpack_require__(50);
-/* unused harmony reexport ActionSheet */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_action_sheet_action_sheet_controller__ = __webpack_require__(107);
-/* unused harmony reexport ActionSheetController */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_action_sheet_action_sheet_component__ = __webpack_require__(49);
-/* unused harmony reexport ActionSheetCmp */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_alert_alert__ = __webpack_require__(52);
-/* unused harmony reexport Alert */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_alert_alert_controller__ = __webpack_require__(108);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_6__components_alert_alert_controller__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_alert_alert_component__ = __webpack_require__(51);
-/* unused harmony reexport AlertCmp */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_app_app__ = __webpack_require__(6);
-/* unused harmony reexport App */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_avatar_avatar__ = __webpack_require__(110);
-/* unused harmony reexport Avatar */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_backdrop_backdrop__ = __webpack_require__(54);
-/* unused harmony reexport Backdrop */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_badge_badge__ = __webpack_require__(111);
-/* unused harmony reexport Badge */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_button_button__ = __webpack_require__(33);
-/* unused harmony reexport Button */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_card_card__ = __webpack_require__(115);
-/* unused harmony reexport Card */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_card_card_content__ = __webpack_require__(112);
-/* unused harmony reexport CardContent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_card_card_header__ = __webpack_require__(113);
-/* unused harmony reexport CardHeader */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_card_card_title__ = __webpack_require__(114);
-/* unused harmony reexport CardTitle */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_checkbox_checkbox__ = __webpack_require__(116);
-/* unused harmony reexport Checkbox */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_chip_chip__ = __webpack_require__(117);
-/* unused harmony reexport Chip */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_content_content__ = __webpack_require__(18);
-/* unused harmony reexport Content */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_datetime_datetime__ = __webpack_require__(118);
-/* unused harmony reexport DateTime */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_fab_fab__ = __webpack_require__(38);
-/* unused harmony reexport FabButton */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_fab_fab_container__ = __webpack_require__(119);
-/* unused harmony reexport FabContainer */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_fab_fab_list__ = __webpack_require__(55);
-/* unused harmony reexport FabList */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_grid_col__ = __webpack_require__(120);
-/* unused harmony reexport Col */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_grid_grid__ = __webpack_require__(121);
-/* unused harmony reexport Grid */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_grid_row__ = __webpack_require__(122);
-/* unused harmony reexport Row */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_ion__ = __webpack_require__(4);
-/* unused harmony reexport Ion */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_icon_icon__ = __webpack_require__(56);
-/* unused harmony reexport Icon */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_img_img__ = __webpack_require__(123);
-/* unused harmony reexport Img */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__components_infinite_scroll_infinite_scroll__ = __webpack_require__(57);
-/* unused harmony reexport InfiniteScroll */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__components_infinite_scroll_infinite_scroll_content__ = __webpack_require__(124);
-/* unused harmony reexport InfiniteScrollContent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__components_input_input__ = __webpack_require__(125);
-/* unused harmony reexport TextInput */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__components_item_item__ = __webpack_require__(16);
-/* unused harmony reexport Item */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__components_item_item_content__ = __webpack_require__(126);
-/* unused harmony reexport ItemContent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_item_item_divider__ = __webpack_require__(127);
-/* unused harmony reexport ItemDivider */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__components_item_item_group__ = __webpack_require__(128);
-/* unused harmony reexport ItemGroup */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__components_item_item_options__ = __webpack_require__(60);
-/* unused harmony reexport ItemOptions */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__components_item_item_reorder__ = __webpack_require__(61);
-/* unused harmony reexport ItemReorder */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__components_item_item_sliding__ = __webpack_require__(130);
-/* unused harmony reexport ItemSliding */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__components_item_reorder__ = __webpack_require__(131);
-/* unused harmony reexport Reorder */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__components_label_label__ = __webpack_require__(62);
-/* unused harmony reexport Label */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__components_list_list__ = __webpack_require__(64);
-/* unused harmony reexport List */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__components_list_list_header__ = __webpack_require__(63);
-/* unused harmony reexport ListHeader */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__components_loading_loading__ = __webpack_require__(133);
-/* unused harmony reexport Loading */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_loading_loading_controller__ = __webpack_require__(132);
-/* unused harmony reexport LoadingController */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_loading_loading_component__ = __webpack_require__(65);
-/* unused harmony reexport LoadingCmp */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__components_menu_menu__ = __webpack_require__(136);
-/* unused harmony reexport Menu */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__components_menu_menu_close__ = __webpack_require__(134);
-/* unused harmony reexport MenuClose */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__components_menu_menu_toggle__ = __webpack_require__(135);
-/* unused harmony reexport MenuToggle */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__components_menu_menu_types__ = __webpack_require__(209);
-/* unused harmony reexport MenuType */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__components_modal_modal__ = __webpack_require__(138);
-/* unused harmony reexport Modal */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__components_modal_modal_component__ = __webpack_require__(66);
-/* unused harmony reexport ModalCmp */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__components_modal_modal_controller__ = __webpack_require__(137);
-/* unused harmony reexport ModalController */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__components_nav_nav__ = __webpack_require__(69);
-/* unused harmony reexport Nav */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__components_nav_nav_pop__ = __webpack_require__(67);
-/* unused harmony reexport NavPop */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__components_nav_nav_pop_anchor__ = __webpack_require__(139);
-/* unused harmony reexport NavPopAnchor */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__components_nav_nav_push__ = __webpack_require__(68);
-/* unused harmony reexport NavPush */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__components_nav_nav_push_anchor__ = __webpack_require__(140);
-/* unused harmony reexport NavPushAnchor */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__components_input_native_input__ = __webpack_require__(58);
-/* unused harmony reexport NativeInput */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__components_input_next_input__ = __webpack_require__(59);
-/* unused harmony reexport NextInput */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__components_note_note__ = __webpack_require__(141);
-/* unused harmony reexport Note */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__components_option_option__ = __webpack_require__(70);
-/* unused harmony reexport Option */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__components_picker_picker__ = __webpack_require__(142);
-/* unused harmony reexport Picker */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__components_picker_picker_component__ = __webpack_require__(72);
-/* unused harmony reexport PickerCmp */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__components_picker_picker_column__ = __webpack_require__(71);
-/* unused harmony reexport PickerColumnCmp */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__components_picker_picker_controller__ = __webpack_require__(73);
-/* unused harmony reexport PickerController */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_67__components_popover_popover__ = __webpack_require__(75);
-/* unused harmony reexport Popover */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__components_popover_popover_component__ = __webpack_require__(74);
-/* unused harmony reexport PopoverCmp */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__components_popover_popover_controller__ = __webpack_require__(143);
-/* unused harmony reexport PopoverController */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__components_radio_radio_button__ = __webpack_require__(144);
-/* unused harmony reexport RadioButton */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__components_radio_radio_group__ = __webpack_require__(76);
-/* unused harmony reexport RadioGroup */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_72__components_range_range__ = __webpack_require__(146);
-/* unused harmony reexport Range */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_73__components_range_range_knob__ = __webpack_require__(145);
-/* unused harmony reexport RangeKnob */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_74__components_refresher_refresher__ = __webpack_require__(77);
-/* unused harmony reexport Refresher */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_75__components_refresher_refresher_content__ = __webpack_require__(147);
-/* unused harmony reexport RefresherContent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_76__components_scroll_scroll__ = __webpack_require__(148);
-/* unused harmony reexport Scroll */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_77__components_searchbar_searchbar__ = __webpack_require__(149);
-/* unused harmony reexport Searchbar */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_78__components_segment_segment__ = __webpack_require__(150);
-/* unused harmony reexport Segment */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_79__components_segment_segment_button__ = __webpack_require__(78);
-/* unused harmony reexport SegmentButton */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_80__components_select_select__ = __webpack_require__(151);
-/* unused harmony reexport Select */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_81__components_select_select_popover_component__ = __webpack_require__(79);
-/* unused harmony reexport SelectPopover */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_82__components_show_hide_when_show_when__ = __webpack_require__(153);
-/* unused harmony reexport ShowWhen */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_83__components_show_hide_when_display_when__ = __webpack_require__(80);
-/* unused harmony reexport DisplayWhen */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_84__components_show_hide_when_hide_when__ = __webpack_require__(152);
-/* unused harmony reexport HideWhen */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_85__components_slides_slide__ = __webpack_require__(154);
-/* unused harmony reexport Slide */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_86__components_slides_slides__ = __webpack_require__(81);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_86__components_slides_slides__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_87__components_spinner_spinner__ = __webpack_require__(157);
-/* unused harmony reexport Spinner */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_88__components_split_pane_split_pane__ = __webpack_require__(34);
-/* unused harmony reexport SplitPane */
-/* unused harmony reexport RootNode */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_89__components_tabs_tab__ = __webpack_require__(159);
-/* unused harmony reexport Tab */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_90__components_tabs_tab_button__ = __webpack_require__(158);
-/* unused harmony reexport TabButton */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_91__components_tabs_tab_highlight__ = __webpack_require__(86);
-/* unused harmony reexport TabHighlight */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_92__components_tabs_tabs__ = __webpack_require__(87);
-/* unused harmony reexport Tabs */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_93__components_toast_toast__ = __webpack_require__(162);
-/* unused harmony reexport Toast */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_94__components_toast_toast_component__ = __webpack_require__(88);
-/* unused harmony reexport ToastCmp */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_95__components_toast_toast_controller__ = __webpack_require__(161);
-/* unused harmony reexport ToastController */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_96__components_toggle_toggle__ = __webpack_require__(163);
-/* unused harmony reexport Toggle */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_97__components_toolbar_toolbar_footer__ = __webpack_require__(165);
-/* unused harmony reexport Footer */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_98__components_toolbar_toolbar_header__ = __webpack_require__(166);
-/* unused harmony reexport Header */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_99__components_toolbar_toolbar__ = __webpack_require__(42);
-/* unused harmony reexport Toolbar */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_100__components_toolbar_toolbar_item__ = __webpack_require__(167);
-/* unused harmony reexport ToolbarItem */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_101__components_toolbar_toolbar_title__ = __webpack_require__(168);
-/* unused harmony reexport ToolbarTitle */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_102__components_toolbar_navbar__ = __webpack_require__(35);
-/* unused harmony reexport Navbar */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_103__components_thumbnail_thumbnail__ = __webpack_require__(160);
-/* unused harmony reexport Thumbnail */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_104__components_typography_typography__ = __webpack_require__(169);
-/* unused harmony reexport Typography */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_105__components_virtual_scroll_virtual_footer__ = __webpack_require__(89);
-/* unused harmony reexport VirtualFooter */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_106__components_virtual_scroll_virtual_header__ = __webpack_require__(90);
-/* unused harmony reexport VirtualHeader */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_107__components_virtual_scroll_virtual_item__ = __webpack_require__(91);
-/* unused harmony reexport VirtualItem */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_108__components_virtual_scroll_virtual_scroll__ = __webpack_require__(170);
-/* unused harmony reexport VirtualScroll */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_109__config_config__ = __webpack_require__(1);
-/* unused harmony reexport Config */
-/* unused harmony reexport setupConfig */
-/* unused harmony reexport ConfigToken */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_110__platform_dom_controller__ = __webpack_require__(8);
-/* unused harmony reexport DomController */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_111__platform_platform__ = __webpack_require__(3);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_111__platform_platform__["a"]; });
-/* unused harmony reexport setupPlatform */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_112__tap_click_haptic__ = __webpack_require__(36);
-/* unused harmony reexport Haptic */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_113__navigation_deep_linker__ = __webpack_require__(14);
-/* unused harmony reexport DeepLinker */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_114__navigation_ionic_page__ = __webpack_require__(227);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_114__navigation_ionic_page__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_115__navigation_nav_controller__ = __webpack_require__(19);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_115__navigation_nav_controller__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_116__navigation_nav_controller_base__ = __webpack_require__(44);
-/* unused harmony reexport NavControllerBase */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_117__navigation_nav_params__ = __webpack_require__(15);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_117__navigation_nav_params__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_118__navigation_nav_util__ = __webpack_require__(22);
-/* unused harmony reexport DeepLinkMetadata */
-/* unused harmony reexport DeepLinkMetadataFactory */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_119__tap_click_tap_click__ = __webpack_require__(181);
-/* unused harmony reexport TapClick */
-/* unused harmony reexport setupTapClick */
-/* unused harmony reexport isActivatable */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_120__navigation_url_serializer__ = __webpack_require__(176);
-/* unused harmony reexport UrlSerializer */
-/* unused harmony reexport DeepLinkConfigToken */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_121__navigation_view_controller__ = __webpack_require__(5);
-/* unused harmony reexport ViewController */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_122__gestures_pan_gesture__ = __webpack_require__(43);
-/* unused harmony reexport PanGesture */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_123__gestures_gesture__ = __webpack_require__(223);
-/* unused harmony reexport Gesture */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_124__gestures_slide_edge_gesture__ = __webpack_require__(92);
-/* unused harmony reexport SlideEdgeGesture */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_125__gestures_slide_gesture__ = __webpack_require__(174);
-/* unused harmony reexport SlideGesture */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_126__gestures_gesture_controller__ = __webpack_require__(7);
-/* unused harmony reexport BLOCK_ALL */
-/* unused harmony reexport GESTURE_GO_BACK_SWIPE */
-/* unused harmony reexport GESTURE_MENU_SWIPE */
-/* unused harmony reexport GESTURE_ITEM_SWIPE */
-/* unused harmony reexport GESTURE_REFRESHER */
-/* unused harmony reexport GESTURE_TOGGLE */
-/* unused harmony reexport GestureController */
-/* unused harmony reexport GestureDelegate */
-/* unused harmony reexport BlockerDelegate */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_127__util_events__ = __webpack_require__(183);
-/* unused harmony reexport Events */
-/* unused harmony reexport setupEvents */
-/* unused harmony reexport setupProvideEvents */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_128__util_ionic_error_handler__ = __webpack_require__(235);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_128__util_ionic_error_handler__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_129__platform_keyboard__ = __webpack_require__(25);
-/* unused harmony reexport Keyboard */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_130__util_form__ = __webpack_require__(17);
-/* unused harmony reexport Form */
-/* unused harmony reexport IonicFormInput */
-/* unused harmony reexport IonicTapInput */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_131__util_util__ = __webpack_require__(2);
-/* unused harmony reexport reorderArray */
-/* unused harmony reexport normalizeURL */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_132__animations_animation__ = __webpack_require__(10);
-/* unused harmony reexport Animation */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_133__transitions_page_transition__ = __webpack_require__(29);
-/* unused harmony reexport PageTransition */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_134__transitions_transition__ = __webpack_require__(26);
-/* unused harmony reexport Transition */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_135__platform_platform_registry__ = __webpack_require__(177);
-/* unused harmony reexport PlatformConfigToken */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_136__config_mode_registry__ = __webpack_require__(171);
-/* unused harmony reexport registerModeConfigs */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_137__gestures_gesture_config__ = __webpack_require__(172);
-/* unused harmony reexport IonicGestureConfig */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_138__module__ = __webpack_require__(226);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_138__module__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_138__module__["b"]; });
-/* unused harmony reexport provideLocationStrategy */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**
- * Global Providers
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**
- * Export Utils
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//# sourceMappingURL=index.js.map
 
 /***/ }),
 /* 12 */
@@ -30818,7 +30818,7 @@ var /** @type {?} */ KEYBOARD_POLLING_CHECKS_MAX = 100;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(11);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Transition; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -35807,7 +35807,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* Version */]
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__transition__ = __webpack_require__(26);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PageTransition; });
 var __extends = (this && this.__extends) || (function () {
@@ -44839,7 +44839,7 @@ function flattenUnsubscriptionErrors(errors) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -44859,8 +44859,8 @@ var ContactPage = (function () {
     return ContactPage;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Slides */]),
-    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Slides */])
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Slides */]),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Slides */])
 ], ContactPage.prototype, "slides", void 0);
 ContactPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
@@ -44877,9 +44877,10 @@ ContactPage = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__blog_blog__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__contact_contact__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__blog_blog__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contact_contact__ = __webpack_require__(47);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -44894,20 +44895,36 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var TabsPage = (function () {
-    function TabsPage() {
+    function TabsPage(events) {
+        var _this = this;
+        this.events = events;
         // this tells the tabs component which Pages
         // should be each tab's root Page
-        this.tab1Root = __WEBPACK_IMPORTED_MODULE_1__home_home__["a" /* HomePage */];
-        this.tab2Root = __WEBPACK_IMPORTED_MODULE_2__blog_blog__["a" /* BlogPage */];
-        this.tab3Root = __WEBPACK_IMPORTED_MODULE_3__contact_contact__["a" /* ContactPage */];
+        this.tab1Root = __WEBPACK_IMPORTED_MODULE_2__home_home__["a" /* HomePage */];
+        this.tab2Root = __WEBPACK_IMPORTED_MODULE_3__blog_blog__["a" /* BlogPage */];
+        this.tab3Root = __WEBPACK_IMPORTED_MODULE_4__contact_contact__["a" /* ContactPage */];
+        this.home = "Home";
+        this.contact = "Contact";
+        this.events.subscribe('language:changed', function (deutsch) {
+            _this.deutsch = deutsch;
+            if (deutsch) {
+                _this.home = "Startseite";
+                _this.contact = "Kontakt";
+            }
+            else {
+                _this.home = "Home";
+                _this.contact = "Contact";
+            }
+        });
     }
     return TabsPage;
 }());
 TabsPage = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/tabs/tabs.html"*/'<ion-tabs main #content>\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Blog" tabIcon="book"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contact"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/tabs/tabs.html"*/
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/tabs/tabs.html"*/'<ion-tabs main #content>\n  <ion-tab [root]="tab1Root" tabTitle="{{home}}" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Blog" tabIcon="book"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="{{contact}}" tabIcon="contact"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/tabs/tabs.html"*/
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Events */]])
 ], TabsPage);
 
 //# sourceMappingURL=tabs.js.map
@@ -55763,7 +55780,7 @@ exports.isArray = Array.isArray || (function (x) { return x && typeof x.length =
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(47);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GetintouchPage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -55785,10 +55802,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * on Ionic pages and navigation.
  */
 var GetintouchPage = (function () {
-    function GetintouchPage(navCtrl, navParams) {
+    function GetintouchPage(navCtrl, navParams, events) {
+        var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.events = events;
         this.contactPage = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPage */];
+        this.events.subscribe('language:changed', function (deutsch) {
+            _this.deutsch = deutsch;
+        });
     }
     GetintouchPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad GetintouchPage');
@@ -55801,9 +55823,9 @@ var GetintouchPage = (function () {
 GetintouchPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-getintouch',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/getintouch/getintouch.html"*/'<!--\n  Generated template for the GetintouchPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n <div class="slide-container">\n        <h1>Let\'s discuss your UX</h1>\n  <p margin-top>\n    As a UX designer, I work with you to design usable solutions that your users need.\n  </p>\n<div class="social-buttons">\n      <a target="_blank" href="https://m.me/brittikbasu"><button ion-button outline padding color="secondary-text" class="social-btn" round>\n  <ion-icon name="chatbubbles" style="font-size:1.5em"></ion-icon>\n</button></a>\n  <a target="_blank" href="https://www.linkedin.com/in/brittikbasu"><button ion-button outline padding color="secondary-text" class="social-btn" round>\n  <ion-icon name="logo-linkedin" style="font-size:1.5em"></ion-icon>\n</button></a>\n<div class="social-breaker"></div>\n<a target="_blank" href="mailto:hello@brittikbasu.com"><button ion-button outline padding color="secondary-text" class="social-btn" round>\n  <ion-icon name="mail" style="font-size:1.5em"></ion-icon>\n</button></a>\n<a target="_blank" href="https://github.com/brittikbasu"><button ion-button outline padding color="secondary-text" class="social-btn" round>\n  <ion-icon name="logo-github" style="font-size:1.5em"></ion-icon>\n</button></a>\n</div>\n          <button ion-button outline icon-right color="secondary-text" round (click)="switchTabs(2)" style="margin-top:2.5vh;">\n  Contact Form\n  <ion-icon name="paper-plane"></ion-icon>\n</button>\n      </div>\n\n\n\n<script>\n  (function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n  })(window,document,\'script\',\'https://www.google-analytics.com/analytics.js\',\'ga\');\n\n  ga(\'create\', \'UA-42932342-1\', \'auto\');\n  ga(\'send\', \'pageview\');\n\n</script>'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/getintouch/getintouch.html"*/,
+        selector: 'page-getintouch',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/getintouch/getintouch.html"*/'<!--\n  Generated template for the GetintouchPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n <div class="slide-container">\n        <ng-container *ngIf = "!deutsch">\n          <h1>Let\'s discuss your UX</h1>\n  <p margin-top>\n    As a UX designer, I can work with you to design usable solutions that your users need.\n  </p>\n        </ng-container>\n\n         <ng-container *ngIf = "deutsch">\n          <h1>Lassen Sie uns Ihre UX besprechen</h1>\n  <p margin-top>\n    Als UX-Designer kann ich mit Ihnen arbeiten, um nutzbare Lösungen zu entwerfen, die Ihre Benutzer benötigen.\n  </p>\n        </ng-container>\n\n<div class="social-buttons">\n      <a target="_blank" href="https://m.me/brittikbasu"><button ion-button outline padding color="secondary-text" class="social-btn" round>\n  <ion-icon name="chatbubbles" style="font-size:1.5em"></ion-icon>\n</button></a>\n  <a target="_blank" href="https://www.linkedin.com/in/brittikbasu"><button ion-button outline padding color="secondary-text" class="social-btn" round>\n  <ion-icon name="logo-linkedin" style="font-size:1.5em"></ion-icon>\n</button></a>\n<div class="social-breaker"></div>\n<a target="_blank" href="mailto:hello@brittikbasu.com"><button ion-button outline padding color="secondary-text" class="social-btn" round>\n  <ion-icon name="mail" style="font-size:1.5em"></ion-icon>\n</button></a>\n<a target="_blank" href="https://github.com/brittikbasu"><button ion-button outline padding color="secondary-text" class="social-btn" round>\n  <ion-icon name="logo-github" style="font-size:1.5em"></ion-icon>\n</button></a>\n</div>\n          <button ion-button outline icon-right color="secondary-text" round (click)="switchTabs(2)" style="margin-top:2.5vh;">\n  <ng-container *ngIf = "!deutsch">\n    Contact Form\n  </ng-container>\n   <ng-container *ngIf = "deutsch">\nKontakt Formular\n  </ng-container>\n  <ion-icon name="paper-plane"></ion-icon>\n</button>\n      </div>\n\n\n\n<script>\n  (function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n  })(window,document,\'script\',\'https://www.google-analytics.com/analytics.js\',\'ga\');\n\n  ga(\'create\', \'UA-42932342-1\', \'auto\');\n  ga(\'send\', \'pageview\');\n\n</script>'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/getintouch/getintouch.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Events */]])
 ], GetintouchPage);
 
 //# sourceMappingURL=getintouch.js.map
@@ -55827,7 +55849,7 @@ webpackEmptyContext.id = 98;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_tabs__ = __webpack_require__(48);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -55849,10 +55871,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
   Ionic pages and navigation.
 */
 var AboutPage = (function () {
-    function AboutPage(navCtrl, navParams) {
+    function AboutPage(navCtrl, navParams, events) {
+        var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.events = events;
         this.tabsPage = __WEBPACK_IMPORTED_MODULE_2__tabs_tabs__["a" /* TabsPage */];
+        events.subscribe('language:changed', function (deutsch) {
+            console.log("german is " + deutsch);
+            _this.deutsch = deutsch;
+        });
     }
     AboutPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad AboutPage');
@@ -55861,9 +55889,9 @@ var AboutPage = (function () {
 }());
 AboutPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-about',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/about/about.html"*/'<!--\n  Generated template for the About page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n\n <!--  <div class="intro">\n <hr class="me">\n    <h2>Hey there! I\'d love to be the catalyst to your app\'s success.</h2>\n  <h3>\n   I\'m good at understanding and then communicating this understanding in a way that let\'s us conceptualize features that your users need. Coming from the startup world I know how important it is to design UX in a way that makes business sense and ticks your KPI\'s. There has to be a balance. First comes love and then comes money. A delightful UX makes your users fall in love with your app and then monetization becomes easier. I\'d love to be the catalyst to your app\'s success..\n  </h3>\n<hr class="me">\n  </div>\n  -->\n\n<script>\n  (function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n  })(window,document,\'script\',\'https://www.google-analytics.com/analytics.js\',\'ga\');\n\n  ga(\'create\', \'UA-42932342-1\', \'auto\');\n  ga(\'send\', \'pageview\');\n\n</script>\n\n<ion-content class="slide-container">\n  <div class="spacer"></div>\n    <div class="spacer"></div>\n\n\n  <!--<h1 margin-bottom>Hey there! I\'d love to be the catalyst to your app\'s success.</h1>-->\n   <h1 padding-left padding-right>Hey there! I\'m a UX designer who loves to code :)</h1>\n\n  <p margin-top padding-left padding-right>\n   I\'m good at understanding problems and then communicating this understanding in a way that let\'s us conceptualize features that your users need.\n   Coming from the startup world I know how important it is to design UX in a way that makes business sense and ticks your KPI\'s.\n   There has to be a balance. First comes love and then comes money.\n   A delightful UX makes your users fall in love with your app<!-- and then monetization becomes easier.\n   It\'s all about serving value to users that\'s easy to use or intuitive. This keeps them coming back.\n  --></p>\n\n  <h2 class="show-only-on-mobile"><<< Swipe << </h2>\n</ion-content>'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/about/about.html"*/
+        selector: 'page-about',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/about/about.html"*/'<!--\n  Generated template for the About page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n\n <!--  <div class="intro">\n <hr class="me">\n    <h2>Hey there! I\'d love to be the catalyst to your app\'s success.</h2>\n  <h3>\n   I\'m good at understanding and then communicating this understanding in a way that let\'s us conceptualize features that your users need. Coming from the startup world I know how important it is to design UX in a way that makes business sense and ticks your KPI\'s. There has to be a balance. First comes love and then comes money. A delightful UX makes your users fall in love with your app and then monetization becomes easier. I\'d love to be the catalyst to your app\'s success..\n  </h3>\n<hr class="me">\n  </div>\n  -->\n\n<script>\n  (function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n  })(window,document,\'script\',\'https://www.google-analytics.com/analytics.js\',\'ga\');\n\n  ga(\'create\', \'UA-42932342-1\', \'auto\');\n  ga(\'send\', \'pageview\');\n\n</script>\n\n<ion-content class="slide-container">\n  <div class="spacer"></div>\n    <div class="spacer"></div>\n\n<div *ngIf="!deutsch">\n\n  <!--<h1 margin-bottom>Hey there! I\'d love to be the catalyst to your app\'s success.</h1>-->\n   <h1 padding-left padding-right>Hey there! I\'m a UX designer who loves to code :)</h1>\n\n  <p margin-top padding-left padding-right>\n   I\'m good at understanding problems and then communicating this understanding in a way that let\'s us conceptualize features that your users need.\n   Coming from the startup world I know how important it is to design UX in a way that makes business sense and ticks your KPI\'s.\n   There has to be a balance. First comes love and then comes money.\n   A delightful UX makes your users fall in love with your app.<!-- and then monetization becomes easier.\n   It\'s all about serving value to users that\'s easy to use or intuitive. This keeps them coming back.\n  --></p>\n</div>\n<div *ngIf="deutsch">\n<h1 padding-left padding-right>Sie da! Ich bin ein UX Designer, der liebt zu Code :)\n</h1>\n\n <p margin-top padding-left padding-right>\n  Ich bin gut in Probleme zu verstehen und dann dieses Verständnis in einer Art und Weise zu kommunizieren, die uns lassen Sie uns Merkmale konzeptionieren, die Ihre Benutzer benötigen.\n  Von der Startup-Welt komme ich, wie wichtig es ist, UX in einer Weise zu entwerfen, die Geschäftssinn macht und Ihre KPIs tickt.\n  Es muss eine Balance geben. Zuerst kommt Liebe und kommt dann Geld.\n  Eine herrliche UX macht Ihre Benutzer verlieben sich in Ihre App.<!-- and then monetization becomes easier.\n   It\'s all about serving value to users that\'s easy to use or intuitive. This keeps them coming back.\n  --></p>\n</div>\n</ion-content>'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/about/about.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Events */]])
 ], AboutPage);
 
 //# sourceMappingURL=about.js.map
@@ -55874,7 +55902,7 @@ AboutPage = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BlogPage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -55908,7 +55936,7 @@ BlogPage = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BravecamPage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -55928,9 +55956,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
   Ionic pages and navigation.
 */
 var BravecamPage = (function () {
-    function BravecamPage(navCtrl, navParams) {
+    function BravecamPage(navCtrl, navParams, events) {
+        var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.events = events;
+        this.events.subscribe('language:changed', function (deutsch) {
+            console.log("german iis " + deutsch);
+            _this.de = deutsch;
+            console.log("ger" + deutsch);
+            console.log("germmm" + _this.de);
+        });
     }
     BravecamPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad BravecamPage');
@@ -55943,9 +55979,9 @@ var BravecamPage = (function () {
 }());
 BravecamPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-bravecam',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/bravecam/bravecam.html"*/'<!--\n  Generated template for the Bravecam page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<!--<ion-header class="sub-page">\n  <ion-navbar>\n    <ion-title>Brave Cam</ion-title>\n  </ion-navbar>\n</ion-header>\n-->\n<ion-content class="sub-page">\n  <ion-slides style="height:70vh; width:100vw;" pager="true">\n    <ion-slide style="height:100%; width:100%;">\n        <div class="backg"></div>\n  </ion-slide>\n   <ion-slide style="height:100%; width:100%;">\n        <div class="backg"></div>\n  </ion-slide>\n   <ion-slide style="height:100%; width:100%;">\n        <div class="backg"></div>\n  </ion-slide>\n  </ion-slides>\n  <ion-toolbar>\n     <ion-navbar>\n    <ion-title>Brave Cam</ion-title>\n  </ion-navbar>\n  </ion-toolbar>\n  <div style="height:90.5vh">\n  <h1>Key Responsibilities</h1>\n  <p>Concept Development | UX Design</p>\n  <h1>The Experience</h1>\n  <p>Kop Berlin is a non-profit that helps victims of police violence. To get a better understanding of the project I talked to the counselors who knew the victims. I conceptualised new features as well as refined the requested ones. I also designed the interactions and there UI. The prototype was made using Adobe comp and flinto lite. This will be an app which people would use in emergencies, I designed the experience accordingly. I worked closely with android developers explaining them who the users were. Design assets were transferred and I also suggested how they could improve the experience using inbuilt features of android like the immersive full-screen mode. </p>\n  </div></ion-content>\n<!--\n<ion-footer class="sub-page">\n  <ion-toolbar>\n <ion-buttons start>\n      <button ion-button icon-left color="royal" navPop>\n     <ion-icon name="arrow-back"></ion-icon>\n     Back\n      </button>\n    </ion-buttons>\n    <div class="footer-button-container">\n        <button ion-button icon-right class="big-right-button" class="center same-size-buttons" margin-right (click)="newTab(\'https://brittikbasu.github.io/Brave Cam_16/#/home\')">\n    Github Repo  <ion-icon name="open"></ion-icon>\n      </button>\n\n        <button ion-button icon-right class="big-right-button" class="center same-size-buttons" (click)="newTab(\'https://brittikbasu.github.io/Brave Cam_16/#/home\')">\n    Test Prototype  <ion-icon name="open"></ion-icon>\n      </button>\n\n    </div>\n  </ion-toolbar>\n</ion-footer>\n-->\n\n<script>\n  (function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n  })(window,document,\'script\',\'https://www.google-analytics.com/analytics.js\',\'ga\');\n\n  ga(\'create\', \'UA-42932342-1\', \'auto\');\n  ga(\'send\', \'pageview\');\n\n</script>'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/bravecam/bravecam.html"*/
+        selector: 'page-bravecam',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/bravecam/bravecam.html"*/'<!--\n  Generated template for the Bravecam page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<!--<ion-header class="sub-page">\n  <ion-navbar>\n    <ion-title>Brave Cam</ion-title>\n  </ion-navbar>\n</ion-header>\n-->\n<ion-content class="sub-page">\n  <ion-slides style="height:70vh; width:100vw;" pager="true">\n    <ion-slide style="height:100%; width:100%;">\n        <div class="backg"></div>\n  </ion-slide>\n   <ion-slide style="height:100%; width:100%;">\n        <div class="backg"></div>\n  </ion-slide>\n   <ion-slide style="height:100%; width:100%;">\n        <div class="backg"></div>\n  </ion-slide>\n  </ion-slides>\n  <ion-toolbar>\n     <ion-navbar>\n    <ion-title>Brave Cam</ion-title>\n  </ion-navbar>\n  </ion-toolbar>\n  <div style="height:90.5vh">\n\n    <div *ngIf="!de">\n  <h1>Key Responsibilities</h1>\n  <p>Concept Development | UX Design</p>\n  <h1>The Experience</h1>\n  <p>Kop Berlin is a non-profit that helps victims of police violence. To get a better understanding of the project I talked to the counselors who knew the victims. I conceptualised new features as well as refined the requested ones. I also designed the interactions and there UI. The prototype was made using Adobe comp and flinto lite. This will be an app which people would use in emergencies, I designed the experience accordingly. I worked closely with android developers explaining them who the users were. Design assets were transferred and I also suggested how they could improve the experience using inbuilt features of android like the immersive full-screen mode. </p>\n    </div>\n\n     <div *ngIf="de">\n  <h1>Hauptverantwortlichkeiten</h1>\n  <p>Konzeptentwicklung | UX Design</p>\n  <h1>Die Erfahrung</h1>\n  <p>Kop Berlin ist ein Non-Profit, das Opfern von Gewalt der Polizei hilft. Um ein besseres Verständnis für das Projekt zu erhalten, sprach ich mit den Beratern, die die Opfer kannten. Ich habe neue Funktionen entworfen und die angeforderten verfeinert. Ich habe auch die Interaktionen und dort UI entworfen. Der Prototyp wurde mit Adobe Comp und Flinto Lite gemacht. Dies wird eine App sein, die die Leute in Notfällen nutzen würden, ich habe die Erfahrung entsprechend entworfen. Ich arbeitete eng mit Android-Entwickler, die ihnen erklärten, wer die Benutzer waren. Design-Assets wurden übertragen und ich auch vorgeschlagen, wie sie die Erfahrung mit eingebauten Features von Android wie die immersive Vollbild-Modus verbessern könnte.</p>\n    </div>\n\n    \n     </div></ion-content>\n<!--\n<ion-footer class="sub-page">\n  <ion-toolbar>\n <ion-buttons start>\n      <button ion-button icon-left color="royal" navPop>\n     <ion-icon name="arrow-back"></ion-icon>\n     Back\n      </button>\n    </ion-buttons>\n    <div class="footer-button-container">\n        <button ion-button icon-right class="big-right-button" class="center same-size-buttons" margin-right (click)="newTab(\'https://brittikbasu.github.io/Brave Cam_16/#/home\')">\n    Github Repo  <ion-icon name="open"></ion-icon>\n      </button>\n\n        <button ion-button icon-right class="big-right-button" class="center same-size-buttons" (click)="newTab(\'https://brittikbasu.github.io/Brave Cam_16/#/home\')">\n    Test Prototype  <ion-icon name="open"></ion-icon>\n      </button>\n\n    </div>\n  </ion-toolbar>\n</ion-footer>\n-->\n\n<script>\n  (function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n  })(window,document,\'script\',\'https://www.google-analytics.com/analytics.js\',\'ga\');\n\n  ga(\'create\', \'UA-42932342-1\', \'auto\');\n  ga(\'send\', \'pageview\');\n\n</script>'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/bravecam/bravecam.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Events */]])
 ], BravecamPage);
 
 //# sourceMappingURL=bravecam.js.map
@@ -55956,7 +55992,7 @@ BravecamPage = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ChaldiyePage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -56004,7 +56040,7 @@ ChaldiyePage = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__about_about__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__work_work__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__getintouch_getintouch__ = __webpack_require__(97);
@@ -56025,12 +56061,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var HomePage = (function () {
     // myAlert: boolean;
-    function HomePage(navCtrl, alertCtrl) {
+    function HomePage(navCtrl, alertCtrl, events) {
         this.navCtrl = navCtrl;
         this.alertCtrl = alertCtrl;
+        this.events = events;
         this.aboutPage = __WEBPACK_IMPORTED_MODULE_2__about_about__["a" /* AboutPage */];
         this.workPage = __WEBPACK_IMPORTED_MODULE_3__work_work__["a" /* WorkPage */];
         this.getintouchPage = __WEBPACK_IMPORTED_MODULE_4__getintouch_getintouch__["a" /* GetintouchPage */];
+        this.deutsch = false;
         this.slideNo = 0;
         this.about = true;
         this.secondaryBright = false;
@@ -56038,22 +56076,30 @@ var HomePage = (function () {
         this.slidesData = [{
                 img: "assets/img/brittik_basu.jpg",
                 headline: "Brittik Basu",
-                paragraph: "UX Designer & Front-end Developer"
+                headlineDE: "Brittik Basu",
+                paragraph: "UX Designer & Hybrid App Developer",
+                paragraphDE: "UX Designer & Hybrid App Developer"
             },
             {
                 img: "assets/img/brittik_basu.jpg",
                 headline: "My Skills",
-                paragraph: "Exciting projects I've worked on"
+                headlineDE: "Meine Fähigkeiten",
+                paragraph: "Things I'm good at",
+                paragraphDE: "Dinge, an denen ich  bin"
             },
             {
                 img: "assets/img/brittik_basu.jpg",
                 headline: "My Work",
-                paragraph: "Exciting projects I've worked on"
+                headlineDE: "Meine Arbeit",
+                paragraph: "Exciting projects I've worked on",
+                paragraphDE: "Spannende Projekte, die ich gearbeitet habe",
             },
             {
                 img: "assets/img/brittik_basu.jpg",
                 headline: "Get in Touch",
-                paragraph: "hello(at)brittikbasu.com"
+                headlineDE: "in Kontakt kommen",
+                paragraph: "hello(at)brittikbasu.com",
+                paragraphDE: "Dinge, an denen ich  bin",
             },
             {
                 img: "",
@@ -56061,6 +56107,7 @@ var HomePage = (function () {
                 paragraph: ""
             }
         ];
+        this.events.publish('language:changed', this.deutsch);
     }
     HomePage.prototype.ionViewDidLoad = function () {
         /*
@@ -56071,6 +56118,11 @@ var HomePage = (function () {
             });
             alert.present();
         */
+    };
+    HomePage.prototype.languageChanged = function () {
+        this.deutsch = !this.deutsch;
+        console.log("language changed");
+        this.events.publish('language:changed', this.deutsch);
     };
     HomePage.prototype.goToSlide = function () {
         this.slides.slideTo(2, 500);
@@ -56141,19 +56193,20 @@ var HomePage = (function () {
     return HomePage;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Slides */]),
-    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Slides */])
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Slides */]),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Slides */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Slides */]) === "function" && _a || Object)
 ], HomePage.prototype, "slides", void 0);
 HomePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/home/home.html"*/'<ion-header class="header-container" style="position: absolute">\n  <ion-item class="me-container">\n    <ion-avatar item-left (click)="this.slides.slideTo(0,500)">\n      <img src="{{slidesData[slideNo].img}}" />\n    </ion-avatar>\n    <h2 [class.secondary-bright]="secondaryBright">{{slidesData[slideNo].headline}}</h2>\n    <p>{{slidesData[slideNo].paragraph}}</p>\n  </ion-item>\n<ion-item class="deutsch-toggle">\n  <ion-toggle checked="false"></ion-toggle>\n    <ion-label>Deutsch</ion-label>\n\n</ion-item>\n  <div class="header-buttons">\n  <button class="header-back-button " round ion-button large icon-left color="secondary" (click)=\'this.slide("prev")\' *ngIf="slideNo > 0">\n  <ion-icon name="arrow-back"></ion-icon>\n</button>\n      <button class="header-forward-button show-only-on-laptop" round ion-button large icon-right color="secondary" (click)=\'this.slide("next")\' *ngIf="this.slideNo != 3">\n  {{slidesData[nextSlideNo].headline}}\n  <ion-icon name="arrow-forward"></ion-icon>\n</button>\n  </div>\n\n</ion-header>\n<ion-content fullscreen="true">\n\n\n\n  <ion-slides class="tabs-area" pager direction="horizontal" (ionSlideDidChange)="slideChanged()" paginationType="progress" effect="coverflow" speed="1250">\n\n    <ion-slide class="slide-about">\n      <page-about></page-about>\n   \n     \n\n    </ion-slide>\n\n\n    <ion-slide class="slide-skills">\n      <!-- <ion-header no-border>\n        <ion-toolbar>\n          <button ion-button round (click)=\'this.slide("prev")\' outline color="primary-dark" class="slide-up" style="position:fixed; border-color: rgba(13, 58, 71, 0.22);">\n            <ion-icon name="arrow-up"></ion-icon></button>\n        </ion-toolbar>\n      </ion-header>\n      -->\n     <page-skills></page-skills>\n     <!-- <ion-footer no-border class="slide-footer">\n        <div class="blur-bg"></div>\n        <ion-toolbar>\n          <button ion-button icon-right color="secondary-text"  outline class="next-slide-button" round (click)=\'this.slide("next")\' when="sm">\n  My Work\n  <ion-icon name="arrow-down"></ion-icon>\n</button>\n        </ion-toolbar>\n      </ion-footer>\n-->\n\n\n    </ion-slide>\n\n\n\n    <ion-slide class="slide-work">\n      <!-- <ion-header no-border>\n        <ion-toolbar>\n          <button ion-button round (click)=\'this.slide("prev")\' outline color="primary" class="slide-up" style="position:fixed; border-color:rgba(19, 79, 127, 0.55);">\n            <ion-icon name="arrow-up"></ion-icon></button>\n        </ion-toolbar>\n      </ion-header>\n      -->\n      <page-work></page-work>\n      \n     <!-- <ion-footer no-border class="slide-footer">\n                <div class="blur-bg"></div>\n        <ion-toolbar>\n          <button ion-button color="primary" icon-right outline class="next-slide-button" round (click)=\'this.slide("next")\' when="sm">\n  Get in touch\n  <ion-icon name="arrow-down"></ion-icon>\n</button>\n        </ion-toolbar>\n      </ion-footer>\n      -->\n   \n        \n    </ion-slide>\n\n\n\n    <ion-slide class="slide-contact">\n     <!-- <ion-header no-border>\n        <ion-toolbar>\n          <button ion-button round (click)=\'this.slide("prev")\' outline color="primary" class="slide-up" style="position:fixed; border-color: rgba(13, 58, 71, 0.22);">\n            <ion-icon name="arrow-up"></ion-icon></button>\n        </ion-toolbar>\n      </ion-header>\n      -->  \n<page-getintouch></page-getintouch>\n    </ion-slide>\n\n\n  </ion-slides>\n\n</ion-content>\n\n\n\n<script>\n  (function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n  })(window,document,\'script\',\'https://www.google-analytics.com/analytics.js\',\'ga\');\n\n  ga(\'create\', \'UA-42932342-1\', \'auto\');\n  ga(\'send\', \'pageview\');\n\n</script>'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/home/home.html"*/,
+        selector: 'page-home',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/home/home.html"*/'<ion-header class="header-container" style="position: absolute">\n  <ion-item class="me-container">\n    <ion-avatar item-left (click)="this.slides.slideTo(0,500)">\n      <img src="{{slidesData[slideNo].img}}" />\n    </ion-avatar>\n    <h2 [class.secondary-bright]="secondaryBright" *ngIf="!deutsch">{{slidesData[slideNo].headline}}</h2>\n        <h2 [class.secondary-bright]="secondaryBright" *ngIf="deutsch">{{slidesData[slideNo].headlineDE}}</h2>\n\n    <p *ngIf="!deutsch">{{slidesData[slideNo].paragraph}}</p>\n        <p *ngIf="deutsch">{{slidesData[slideNo].paragraphDE}}</p>\n\n  </ion-item>\n<ion-item class="deutsch-toggle">\n  <ion-toggle (tap)="languageChanged()"></ion-toggle>\n    <ion-label>Deutsch</ion-label>\n</ion-item>\n  <div class="header-buttons">\n  <button class="header-back-button " round ion-button large icon-left color="secondary" (click)=\'this.slide("prev")\' *ngIf="slideNo > 0">\n  <ion-icon name="arrow-back"></ion-icon>\n</button>\n      <button class="header-forward-button show-only-on-laptop" round ion-button large icon-right color="secondary" (click)=\'this.slide("next")\' *ngIf="this.slideNo != 3">\n  <ng-container *ngIf="!deutsch">{{slidesData[nextSlideNo].headline}}</ng-container>\n    <ng-container *ngIf="deutsch">{{slidesData[nextSlideNo].headlineDE}}</ng-container>\n\n  <ion-icon name="arrow-forward"></ion-icon>\n</button>\n\n  </div>\n\n</ion-header>\n<ion-content fullscreen="true">\n\n\n\n  <ion-slides class="tabs-area" pager direction="horizontal" (ionSlideDidChange)="slideChanged()" paginationType="progress" effect="coverflow" speed="1250">\n\n    <ion-slide class="slide-about">\n     <!-- <ion-header no-border>\n        <ion-toolbar>\n           <ion-item class="deutsch-toggle">\n  <ion-toggle [(ngModel)]="deutsch" (tap)="languageChanged()"></ion-toggle>\n    <ion-label>Deutsch</ion-label>\n\n</ion-item>\n        </ion-toolbar>\n      </ion-header>\n      -->\n\n\n      <page-about></page-about>\n\n    <ion-footer no-border class="slide-footer show-only-on-mobile" style="margin:0 auto">\n        <!--<div class="blur-bg"></div>-->\n        <ion-toolbar>\n  \n    \n          <button ion-button icon-right color="secondary-text"  clear class="next-slide-button" (click)=\'this.slide("next")\'>\n  <ion-icon name="ios-arrow-back"> </ion-icon> \n  <ion-icon name="ios-arrow-back"> </ion-icon>\n  <ion-icon name="ios-arrow-back"> </ion-icon>   \n  <p> Swipe left</p>\n  <ion-icon name="ios-arrow-back"> </ion-icon>\n  <ion-icon name="ios-arrow-back"> </ion-icon>\n\n</button>\n        </ion-toolbar>\n      </ion-footer>\n\n     \n\n    </ion-slide>\n\n\n    <ion-slide class="slide-skills">\n      <!-- <ion-header no-border>\n        <ion-toolbar>\n          <button ion-button round (click)=\'this.slide("prev")\' outline color="primary-dark" class="slide-up" style="position:fixed; border-color: rgba(13, 58, 71, 0.22);">\n            <ion-icon name="arrow-up"></ion-icon></button>\n        </ion-toolbar>\n      </ion-header>\n      -->\n     <page-skills></page-skills>\n     <!-- <ion-footer no-border class="slide-footer">\n        <div class="blur-bg"></div>\n        <ion-toolbar>\n          <button ion-button icon-right color="secondary-text"  outline class="next-slide-button" round (click)=\'this.slide("next")\' when="sm">\n  My Work\n  <ion-icon name="arrow-down"></ion-icon>\n</button>\n        </ion-toolbar>\n      </ion-footer>\n-->\n\n\n    </ion-slide>\n\n\n\n    <ion-slide class="slide-work">\n      <!-- <ion-header no-border>\n        <ion-toolbar>\n          <button ion-button round (click)=\'this.slide("prev")\' outline color="primary" class="slide-up" style="position:fixed; border-color:rgba(19, 79, 127, 0.55);">\n            <ion-icon name="arrow-up"></ion-icon></button>\n        </ion-toolbar>\n      </ion-header>\n      -->\n      <page-work></page-work>\n      \n     <!-- <ion-footer no-border class="slide-footer">\n                <div class="blur-bg"></div>\n        <ion-toolbar>\n          <button ion-button color="primary" icon-right outline class="next-slide-button" round (click)=\'this.slide("next")\' when="sm">\n  Get in touch\n  <ion-icon name="arrow-down"></ion-icon>\n</button>\n        </ion-toolbar>\n      </ion-footer>\n      -->\n   \n        \n    </ion-slide>\n\n\n\n    <ion-slide class="slide-contact">\n     <!-- <ion-header no-border>\n        <ion-toolbar>\n          <button ion-button round (click)=\'this.slide("prev")\' outline color="primary" class="slide-up" style="position:fixed; border-color: rgba(13, 58, 71, 0.22);">\n            <ion-icon name="arrow-up"></ion-icon></button>\n        </ion-toolbar>\n      </ion-header>\n      -->  \n<page-getintouch></page-getintouch>\n    </ion-slide>\n\n\n  </ion-slides>\n\n</ion-content>\n\n\n\n<script>\n  (function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n  })(window,document,\'script\',\'https://www.google-analytics.com/analytics.js\',\'ga\');\n\n  ga(\'create\', \'UA-42932342-1\', \'auto\');\n  ga(\'send\', \'pageview\');\n\n</script>'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/home/home.html"*/,
         queries: {
             content: new __WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */]('content')
         }
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* AlertController */]])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* AlertController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Events */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Events */]) === "function" && _d || Object])
 ], HomePage);
 
+var _a, _b, _c, _d;
 //# sourceMappingURL=home.js.map
 
 /***/ }),
@@ -56162,7 +56215,7 @@ HomePage = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PolizeigewaltPage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -56210,7 +56263,7 @@ PolizeigewaltPage = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PolysparesPage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -56258,7 +56311,7 @@ PolysparesPage = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bravecam_bravecam__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__chaldiye_chaldiye__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__polyspares_polyspares__ = __webpack_require__(105);
@@ -56286,13 +56339,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
   Ionic pages and navigation.
 */
 var WorkPage = (function () {
-    function WorkPage(navCtrl, navParams) {
+    function WorkPage(navCtrl, navParams, events) {
+        var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.events = events;
         this.bravecamPage = __WEBPACK_IMPORTED_MODULE_2__bravecam_bravecam__["a" /* BravecamPage */];
         this.chaldiyePage = __WEBPACK_IMPORTED_MODULE_3__chaldiye_chaldiye__["a" /* ChaldiyePage */];
         this.polysparesPage = __WEBPACK_IMPORTED_MODULE_4__polyspares_polyspares__["a" /* PolysparesPage */];
         this.polizeigewaltPage = __WEBPACK_IMPORTED_MODULE_5__polizeigewalt_polizeigewalt__["a" /* PolizeigewaltPage */];
+        this.events.subscribe('language:changed', function (deutsch) {
+            _this.deutsch = deutsch;
+        });
     }
     WorkPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad WorkPage');
@@ -56301,9 +56359,9 @@ var WorkPage = (function () {
 }());
 WorkPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-work',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/work/work.html"*/'<div class="slide-container">\n\n  <div class="spacer"></div>\n  <div class="spacer"></div>\n\n  <ion-card [navPush]="bravecamPage">\n\n    <div class="card-info-container">\n      <div class="card-title">Brave Cam\n        <ion-icon name="arrow-forward" color="secondary-light" class="card-arrow"></ion-icon>\n      </div>\n      <div class="card-subtitle">Android app to fight racism</div>\n    </div>\n\n    <img class="card-image" src="assets/img/card-madison.png" />\n\n    <div class="card-button">\n    <button ion-button full color="secondary-light" class="cover">Know More</button>\n    </div>\n\n  </ion-card>\n\n  <ion-card [navPush]="chaldiyePage">\n\n    <div class="card-info-container">\n      <div class="card-title">\n        <div class="view-history">\n          <div>\n            Chaldiye\n            <ion-icon name="arrow-forward" color="secondary-light" class="card-arrow"></ion-icon>\n          </div>\n        </div>\n      </div>\n      <div class="card-subtitle">App for an Adventure Startup</div>\n    </div>\n\n    <img class="card-image" src="assets/img/card-huntfactor.jpg" />\n\n    <div class="card-button">\n    <button ion-button full color="secondary-light" class="cover">Know More</button>\n    </div>\n\n  </ion-card>\n\n  <ion-card [navPush]="polysparesPage">\n\n    <div class="card-info-container">\n      <div class="card-title">Polyspares\n        <ion-icon name="arrow-forward" color="secondary-light" class="card-arrow"></ion-icon>\n      </div>\n      <div class="card-subtitle">Website for spares exporter</div>\n    </div>\n\n    <img class="card-image" src="assets/img/card-polyspares.jpg" />\n\n<div class="card-button">\n    <button ion-button full color="secondary-light" class="cover">Know More</button>\n</div>\n\n  </ion-card>\n\n   <ion-card [navPush]="polizeigewaltPage">\n    <div class="card-info-container">\n      <div class="card-title">Polizeigewalt\n        <ion-icon name="arrow-forward" color="secondary-light" class="card-arrow"></ion-icon>\n      </div>\n      <div class="card-subtitle">Logo design for a non-profit</div>\n    </div>\n    <img class="card-image" src="assets/img/card-polyspares.jpg" />\n\n    <div class="card-button">\n      <button ion-button full color="secondary-light" class="cover" >Know More</button>\n      </div>\n  </ion-card>\n<div class="spacer"></div>\n<div class="spacer"></div>\n\n\n</div>\n\n\n\n<script>\n  (function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n  })(window,document,\'script\',\'https://www.google-analytics.com/analytics.js\',\'ga\');\n\n  ga(\'create\', \'UA-42932342-1\', \'auto\');\n  ga(\'send\', \'pageview\');\n\n</script>'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/work/work.html"*/
+        selector: 'page-work',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/work/work.html"*/'<div class="slide-container">\n\n  <div class="spacer"></div>\n  <div class="spacer"></div>\n\n  <ion-card [navPush]="bravecamPage">\n\n    <div class="card-info-container">\n      <div class="card-title">Brave Cam\n        <ion-icon name="arrow-forward" color="secondary-light" class="card-arrow"></ion-icon>\n      </div>\n            <div class="card-subtitle" *ngIf="!deutsch">Android app to fight racism</div>\n      <div class="card-subtitle" *ngIf="deutsch">App, um Rassismus zu bekämpfen</div>\n    </div>\n\n    <img class="card-image" src="assets/img/card-brave-cam.png" />\n\n    <div class="card-button">\n <button ion-button full color="secondary-light" class="cover" *ngIf="!deutsch">Know More</button>\n    <button ion-button full color="secondary-light" class="cover" *ngIf="deutsch">Mehr wissen</button>    </div>\n\n  </ion-card>\n\n  <ion-card [navPush]="chaldiyePage">\n\n    <div class="card-info-container">\n      <div class="card-title">\n        <div class="view-history">\n          <div>\n            Chaldiye\n            <ion-icon name="arrow-forward" color="secondary-light" class="card-arrow"></ion-icon>\n          </div>\n        </div>\n      </div>\n      <div class="card-subtitle" *ngIf= "!deutsch">App for an Adventure Startup</div>\n            <div class="card-subtitle" *ngIf= "deutsch">App für ein Abenteuer-Startup</div>\n\n    </div>\n\n    <img class="card-image" src="assets/img/card-huntfactor.jpg" />\n\n    <div class="card-button">\n <button ion-button full color="secondary-light" class="cover" *ngIf="!deutsch">Know More</button>\n    <button ion-button full color="secondary-light" class="cover" *ngIf="deutsch">Mehr wissen</button>    </div>\n\n  </ion-card>\n\n  <ion-card [navPush]="polysparesPage">\n\n    <div class="card-info-container">\n      <div class="card-title">Polyspares\n        <ion-icon name="arrow-forward" color="secondary-light" class="card-arrow"></ion-icon>\n      </div>\n      <div class="card-subtitle"*ngIf="!deutsch">Website for spares exporter</div>\n      <div class="card-subtitle"*ngIf="deutsch">Webseite für Ersatzteile Exporteur</div>\n    </div>\n\n    <img class="card-image" src="assets/img/card-polyspares.jpg" />\n\n<div class="card-button">\n    <button ion-button full color="secondary-light" class="cover" *ngIf="!deutsch">Know More</button>\n    <button ion-button full color="secondary-light" class="cover" *ngIf="deutsch">Mehr wissen</button>\n\n</div>\n\n  </ion-card>\n\n   <ion-card [navPush]="polizeigewaltPage">\n    <div class="card-info-container">\n      <div class="card-title">Polizeigewalt\n        <ion-icon name="arrow-forward" color="secondary-light" class="card-arrow"></ion-icon>\n      </div>\n      <div class="card-subtitle" *ngIf = "!deutsch">Logo design for a non-profit</div>\n      <div class="card-subtitle" *ngIf = "deutsch">Logo-Design für eine Non-Profit</div>\n\n    </div>\n    <img class="card-image" src="assets/img/card-polizei-gewalt.jpg" />\n\n    <div class="card-button">\n <button ion-button full color="secondary-light" class="cover" *ngIf="!deutsch">Know More</button>\n    <button ion-button full color="secondary-light" class="cover" *ngIf="deutsch">Mehr wissen</button>      </div>\n  </ion-card>\n<div class="spacer"></div>\n<div class="spacer"></div>\n\n\n</div>\n\n\n\n<script>\n  (function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n  })(window,document,\'script\',\'https://www.google-analytics.com/analytics.js\',\'ga\');\n\n  ga(\'create\', \'UA-42932342-1\', \'auto\');\n  ga(\'send\', \'pageview\');\n\n</script>'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/work/work.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Events */]])
 ], WorkPage);
 
 //# sourceMappingURL=work.js.map
@@ -74225,7 +74283,7 @@ webpackAsyncContext.id = 196;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_blog_blog__ = __webpack_require__(100);
@@ -74288,21 +74346,7 @@ AppModule = __decorate([
         imports: [
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {
                 tabsHideOnSubPages: 'true',
-                tabsPlacement: 'top',
-                platforms: {
-                    ios: {
-                        tabsPlacement: 'bottom'
-                    },
-                    android: {
-                        tabsPlacement: 'bottom'
-                    },
-                    core: {
-                        tabsPlacement: 'top'
-                    },
-                    mobileweb: {
-                        tabsPlacement: 'bottom'
-                    }
-                }
+                tabsPlacement: 'bottom',
             }, {
                 links: [
                     { loadChildren: '../pages/getintouch/getintouch.module#GetintouchPageModule', name: 'GetintouchPage', segment: 'getintouch', priority: 'low', defaultHistory: [] },
@@ -74525,7 +74569,7 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SkillsPage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -74545,9 +74589,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * on Ionic pages and navigation.
  */
 var SkillsPage = (function () {
-    function SkillsPage(navCtrl, navParams) {
+    function SkillsPage(navCtrl, navParams, events) {
+        var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.events = events;
+        this.events.subscribe('language:changed', function (deutsch) {
+            _this.deutsch = deutsch;
+        });
     }
     SkillsPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad SkillsPage');
@@ -74557,9 +74606,9 @@ var SkillsPage = (function () {
 SkillsPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-skills',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/skills/skills.html"*/'<!--\n  Generated template for the SkillsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<!--\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>skills</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n-->\n<ion-content class="slide-container">\n<div class="spacer"></div>\n<div class="spacer"></div>\n\n\n  <h1>UX Design</h1>\n  <p>\n    As a UX designer, I work with you to design usable solutions that your users need. I develop concepts, personas, storyboards,\n    wireframes and prototypes to clearly communicate these solutions.\n  </p>\n \n  <h1>Front-end Development</h1>\n  <!--<p>\n      My skills in UX Design translate well into understanding how you wish to be perceived as a brand and enables me to craft\n      your distinctive personality across touchpoints.</p>\n-->\n  <p>\n    I love bringing my designs to life! Front-end development allows me to do so. I use Angular and Ionic framework to give my\n    web apps a native feel. Progressive web apps are the future!\n  </p>\n\n   \n  <h1>Brand & Identity Design</h1>\n  <p>\n      My skills in UX Design translate well into understanding how you wish to be perceived as a brand and enables me to craft\n      your distinctive personality across touchpoints.</p>\n<div class="spacer"></div>\n\n\n       \n</ion-content>\n\n<script>\n  (function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n  })(window,document,\'script\',\'https://www.google-analytics.com/analytics.js\',\'ga\');\n\n  ga(\'create\', \'UA-42932342-1\', \'auto\');\n  ga(\'send\', \'pageview\');\n\n</script>'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/skills/skills.html"*/,
+        selector: 'page-skills',template:/*ion-inline-start:"/home/ubuntu/bfolio/src/pages/skills/skills.html"*/'<!--\n  Generated template for the SkillsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<!--\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>skills</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n-->\n<ion-content class="slide-container">\n  <div class="spacer"></div>\n  <div class="spacer"></div>\n\n<div *ngIf="!deutsch">\n  <h1>UX Design</h1>\n  <p>\n    As a UX designer, I work with you to design usable solutions that your users need. I develop concepts, personas, storyboards,\n    wireframes and prototypes to clearly communicate these solutions.\n  </p>\n\n  <h1>Front-end Development</h1>\n\n  <p>\n    I love bringing my designs to life! Front-end development allows me to do so. I use Angular and Ionic framework to give my\n    web apps a native feel. Progressive web apps are the future!\n  </p>\n\n\n  <h1>Brand & Identity Design</h1>\n  <p>\n    My skills in UX Design translate well into understanding how you wish to be perceived as a brand and enables me to craft\n    your distinctive personality across touchpoints.</p>\n</div>\n\n<div *ngIf="deutsch">\n  <h1>UX Design</h1>\n  <p>\n   Als UX-Designer arbeite ich mit Ihnen zusammen, um nutzbare Lösungen zu entwerfen, die Ihre Benutzer benötigen. Ich entwickle konzepte, personen, storyboards, Wireframes und Prototypen, um diese Lösungen klar zu kommunizieren.\n  </p>\n\n  <h1>Front-end Entwicklung</h1>\n\n  <p>\n    Ich liebe es, meine Entwürfe zum Leben zu erwecken! Front-End-Entwicklung erlaubt mir, dies zu tun. Ich verwende Angular und Ionische Rahmen, um meine zu geben Web-Apps ein natives Gefühl. Progressive Web-Apps sind die Zukunft!\n  </p>\n\n\n  <h1>Brand & Identity Design</h1>\n  <p>\n    Meine Fähigkeiten in UX Design übersetzen gut in das Verständnis, wie du als Marke wahrgenommen werden möchtest und mir erlaubt, zu handeln Ihre unverwechselbare Persönlichkeit über Berührungspunkte.</p>\n</div>\n\n\n\n  <div class="spacer"></div>\n\n\n\n</ion-content>\n\n<script>\n  (function (i, s, o, g, r, a, m) {\n    i[\'GoogleAnalyticsObject\'] = r;\n    i[r] = i[r] || function () {\n      (i[r].q = i[r].q || []).push(arguments)\n    }, i[r].l = 1 * new Date();\n    a = s.createElement(o),\n      m = s.getElementsByTagName(o)[0];\n    a.async = 1;\n    a.src = g;\n    m.parentNode.insertBefore(a, m)\n  })(window, document, \'script\', \'https://www.google-analytics.com/analytics.js\', \'ga\');\n\n  ga(\'create\', \'UA-42932342-1\', \'auto\');\n  ga(\'send\', \'pageview\');\n\n</script>\n'/*ion-inline-end:"/home/ubuntu/bfolio/src/pages/skills/skills.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Events */]])
 ], SkillsPage);
 
 //# sourceMappingURL=skills.js.map
@@ -74570,7 +74619,7 @@ SkillsPage = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_tabs_tabs__ = __webpack_require__(48);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -74600,7 +74649,7 @@ var MyApp = (function () {
 MyApp = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"/home/ubuntu/bfolio/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/home/ubuntu/bfolio/src/app/app.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */]])
 ], MyApp);
 
 //# sourceMappingURL=app.component.js.map
@@ -101226,7 +101275,7 @@ var ImportResolver = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__transitions_transition__ = __webpack_require__(26);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionSheetSlideIn; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ActionSheetSlideOut; });
@@ -101367,7 +101416,7 @@ var ActionSheetWpSlideOut = (function (_super) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__transitions_transition__ = __webpack_require__(26);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AlertPopIn; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return AlertPopOut; });
@@ -102044,7 +102093,7 @@ function clickedOptionButton(ev) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__transitions_transition__ = __webpack_require__(26);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoadingPopIn; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return LoadingPopOut; });
@@ -102359,7 +102408,7 @@ function MenuContentGesture_tsickle_Closure_declarations() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_menu_controller__ = __webpack_require__(24);
 /* unused harmony export MenuType */
 var __extends = (this && this.__extends) || (function () {
@@ -102673,7 +102722,7 @@ function ModalImpl_tsickle_Closure_declarations() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__transitions_page_transition__ = __webpack_require__(29);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalSlideIn; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ModalSlideOut; });
@@ -102823,7 +102872,7 @@ var /** @type {?} */ MAX_PICKER_SPEED = 60;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__transitions_transition__ = __webpack_require__(26);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PickerSlideIn; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return PickerSlideOut; });
@@ -102968,7 +103017,7 @@ function PopoverImpl_tsickle_Closure_declarations() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__transitions_page_transition__ = __webpack_require__(29);
 /* unused harmony export PopoverTransition */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PopoverPopIn; });
@@ -104447,7 +104496,7 @@ function enableKeyboardControl(s, plt, shouldEnable) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__transitions_transition__ = __webpack_require__(26);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ToastSlideIn; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ToastSlideOut; });
@@ -109081,7 +109130,7 @@ var /** @type {?} */ TOUCH_DOWN_ACCEL = 300;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_util__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__page_transition__ = __webpack_require__(29);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IOSTransition; });
@@ -109266,7 +109315,7 @@ var IOSTransition = (function (_super) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_util__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__page_transition__ = __webpack_require__(29);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MDTransition; });
@@ -109346,7 +109395,7 @@ var MDTransition = (function (_super) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animations_animation__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_util__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__page_transition__ = __webpack_require__(29);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WPTransition; });
